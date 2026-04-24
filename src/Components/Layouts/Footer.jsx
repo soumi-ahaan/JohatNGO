@@ -18,7 +18,11 @@ const Footer = () => {
 
           {/* 1st Column */}
           <div>
-            <img src={logo} alt="logo" className="mb-4" />
+            <img
+              src={logo}
+              alt="logo"
+              className="mb-4 w-[300px] md:w-[350px] lg:w-auto"
+            />
 
             <p className="text-[16px] font-medium leading-[26px] text-white max-w-[280px]">
               Discover the inspiring stories of individuals and communities
@@ -101,7 +105,11 @@ const Footer = () => {
 
               {/* Address */}
               <li className="flex items-start gap-3">
-                <MapPinIcon size={45} weight="regular" className="text-[#FFAC00] mt-[1px]" />
+                <MapPinIcon
+                  size={28}
+                  weight="regular"
+                  className="text-[#FFAC00] mt-[3px] shrink-0"
+                />
 
                 <a
                   href="https://maps.app.goo.gl/2kmyUZe9Ac4b7R2z8"
