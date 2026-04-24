@@ -39,9 +39,11 @@ export default function TopHeader() {
             <div className="bg-[#1F6B5A] p-1 md:p-2 rounded-full ">
               <PhoneIcon  weight="fill" className="w-4 h-4 lg:w-6 lg:h-6"/>
             </div>
-            <a href="tel:+1-231-427-2289" className="cursor-pointer text-[10px] sm:text-xs font-semibold">
-              +1-231-427-2289 / +1-231-459-6853
-            </a>
+            <div className="text-[10px] sm:text-xs font-semibold flex gap-2">
+  <a href="tel:+12314272289">+1-231-427-2289</a>
+  <span>/</span>
+  <a href="tel:+12314596853">+1-231-459-6853</a>
+</div>
           </div>
         </div>
 
