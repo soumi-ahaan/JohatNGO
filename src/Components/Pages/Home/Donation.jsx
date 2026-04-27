@@ -102,7 +102,7 @@ const Donation = () => {
             ></textarea>
 
             <div className="pt-4">
-              <button type="submit" className="bg-[#FFAC00] text-white font-bold px-8 py-3 lg:py-4 lg:px-15 uppercase tracking-widest text-xs transition-colors duration-200 transform -skew-x-12">
+              <button type="submit" className="cursor-pointer bg-[#FFAC00] text-white font-bold px-8 py-3 lg:py-4 lg:px-15 uppercase tracking-widest text-xs transition-colors duration-200 transform -skew-x-12">
                 <span className="inline-block skew-x-12 text-xs uppercase tracking-widest">
                   Send a Message
                 </span>
@@ -116,7 +116,7 @@ const Donation = () => {
       <div className="flex flex-col shadow-2xl  overflow-hidden">
         <div className="h-full md:h-2/3">
           <img
-            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80"
+            src="donation.jpg"
             alt="Children"
             className="w-full h-full object-cover"
           />

@@ -8,7 +8,7 @@ const Aboutus = () => {
         {/* Left Column: Image Container */}
         <div className="relative h-[300px] md:h-[500px] lg:h-[640px] w-full overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80"
+            src="/about.png"
             alt="Volunteer reading with children"
             className="w-full h-full object-cover"
           />
@@ -65,7 +65,7 @@ const Aboutus = () => {
  
           {/* CTA Button */}
           <div className="pt-4">
-            <button className="bg-[#FFAC00] text-white font-bold px-8 py-3 lg:py-4 lg:px-15 uppercase tracking-widest text-xs transition-colors duration-200 transform -skew-x-12">
+            <button className="cursor-pointer bg-[#FFAC00] text-white font-bold px-8 py-3 lg:py-4 lg:px-15 uppercase tracking-widest text-xs transition-colors duration-200 transform -skew-x-12">
               <span className="inline-block skew-x-12">Learn More</span>
             </button>
           </div>
