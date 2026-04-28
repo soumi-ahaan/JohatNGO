@@ -1,6 +1,51 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Aboutus = () => {
+
+  const rightRef = useRef(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      
+      // Animate children with stagger (better than animating whole div)
+     gsap.fromTo(
+  rightRef.current.children,
+  {
+    y: 140,          // ⬅️ more travel distance (clear motion)
+    opacity: 0,
+    scale: 0.96      // ⬅️ subtle depth (pro feel)
+  },
+  {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    duration: 1.6,   // ⬅️ slower
+    ease: "expo.out",// ⬅️ smoother than power2
+    stagger: 0.4,    // ⬅️ clearer sequence
+    scrollTrigger: {
+      trigger: rightRef.current,
+
+      start: "top 65%",   // ⬅️ MUCH later trigger (key fix)
+      end: "top 30%",
+
+      toggleActions: "play none none reset",
+      // plays only when reached, resets if you scroll back
+
+      once: true, // ⬅️ prevents early accidental play
+      markers: false // set true if you want to debug
+    }
+  }
+)
+    }, rightRef)
+
+    return () => ctx.revert()
+  }, [])
+
+
   return (
         <div className="max-w-[1440px] mx-auto py-16 px-4 md:px-8 lg:px-9 xl:px-[72px] bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-12 items-center">
@@ -15,7 +60,7 @@ const Aboutus = () => {
         </div>
  
         {/* Right Column: Content */}
-        <div className="space-y-3 lg:space-y-6">
+        <div  ref={rightRef} className="space-y-3 lg:space-y-6">
           <div className="space-y-2">
             <span className="relative inline-block text-yellow-500 font-serif italic text-[24px] font-caveat font-bold after:content-[''] after:absolute after:left-0 after:top-0 after:w-1/2 after:border-t-2 after:border-yellow-500">
               About Us

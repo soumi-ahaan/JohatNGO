@@ -1,9 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { getWorks, getImageById } from "../../../Api/Api";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const RecentWork = () => {
   const [works, setWorks] = useState([]);
   const [images, setImages] = useState({});
+
+  const sectionRef = useRef(null);
+  const cardsRef = useRef([]);
+
+  cardsRef.current = [];
+
+  const addToRefs = (el) => {
+    if (el && !cardsRef.current.includes(el)) {
+      cardsRef.current.push(el);
+    }
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,7 +31,6 @@ const RecentWork = () => {
         await Promise.all(
           data.map(async (item) => {
             const id = item?.acf?.image;
-
             if (id) {
               const url = await getImageById(id);
               imgMap[id] = url;
@@ -33,11 +47,47 @@ const RecentWork = () => {
     fetchData();
   }, []);
 
+  // 🔥 GSAP Animation
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+    gsap.fromTo(
+  cardsRef.current,
+  {
+    y: 140,
+    opacity: 0,
+    scale: 0.96
+  },
+  {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    duration: 1.6,
+    ease: "expo.out",
+    stagger: 0.4,
+    scrollTrigger: {
+      trigger: sectionRef.current,
+
+      start: "top 70%",   // ⬅️ starts ONLY when section is clearly visible
+      end: "top 30%",
+
+      toggleActions: "play none none reset", 
+      // ⬅️ resets if you scroll away (optional but useful)
+
+      once: true, 
+      // ⬅️ ensures it runs only when user actually reaches it
+    }
+  }
+)
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, [works]);
+
   return (
-    <div className="py-24">
+    <div ref={sectionRef} className="py-24">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 xl:px-[72px] bg-white">
 
-        {/* 🔥 Heading */}
+        {/* Heading */}
         <div className="mb-12">
           <p className="relative inline-block text-yellow-500 font-serif italic text-[24px] font-caveat font-bold after:content-[''] after:absolute after:left-0 after:top-0 after:w-1/2 after:border-t-2 after:border-yellow-500">
             Complete Projects
@@ -48,7 +98,7 @@ const RecentWork = () => {
           </h2>
         </div>
 
-        {/* 🔥 Grid */}
+        {/* Grid */}
         <div className="grid md:grid-cols-3 gap-[19px]">
 
           {works.map((item, i) => {
@@ -57,6 +107,7 @@ const RecentWork = () => {
             return (
               <div
                 key={i}
+                ref={addToRefs}
                 className="relative rounded-2xl overflow-hidden group cursor-pointer"
               >
                 {/* Image */}
@@ -66,7 +117,7 @@ const RecentWork = () => {
                   className="w-full h-[320px] object-cover rounded-2xl transition duration-500 group-hover:scale-105"
                 />
 
-                {/* Overlay (optional but pro) */}
+                {/* Overlay */}
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition"></div>
               </div>
             );
