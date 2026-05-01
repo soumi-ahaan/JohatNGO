@@ -48,3 +48,20 @@ export const submitDonation = async (data) => {
   );
   return res.data;
 };
+
+// ==============================
+// 🔥 WHAT WE DO API
+// ==============================
+
+export const getWhatWeDo = async () => {
+  const res = await API.get("/what-we-do?_embed");
+  return res.data;
+};
+
+export const submitDonationEntry = async (data) => {
+  const res = await axios.post(
+    "https://johatngo.ahaanmedia.com/wp-json/donation-entry/v1/submit",
+    data
+  );
+  return res.data;
+};
