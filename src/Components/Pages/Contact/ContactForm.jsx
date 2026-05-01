@@ -55,11 +55,10 @@ export default function ContactForm ()  {
 
 const required = { required: "This field is required" };
     return (
-        <div className="bg-[#F7F7F7] relative">
-        <div className=" grid grid-cols-1 lg:grid-cols-[1fr_1.05fr]">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-[1fr_1.05fr]">
 
             {/* LEFT: FORM */}
-            <div className="max-w-[720px]  px-4 md:px-8 lg:px-12 xl:px-[72px] py-[150px]">
+            <div className="bg-[#F7F7F7] px-4 md:px-8 lg:px-12 xl:px-[72px] py-[150px]">
                 <div className="w-10 h-[2px] bg-[#FFAC00]" />
                   <p className="text-md md:text-2xl text-[#FFAC00] italic font-caveat pt-1">
                     Contact Now
@@ -267,7 +266,6 @@ const required = { required: "This field is required" };
 
                 </div>
             </div>
-        </div>
         </div>
     );
 };
