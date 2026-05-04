@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { Phone, EnvelopeSimple, MapTrifoldIcon } from "@phosphor-icons/react";
 import { submitDonation } from "../../../Api/Api";
 import { Link } from "react-router-dom";
 const Donation = () => {
@@ -122,27 +123,25 @@ const Donation = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="h-full md:h-1/3 bg-amber-500 p-3 lg:p-4 grid grid-cols-1 lg:grid-cols-2 justify-around items-center text-white gap-2 md:gap-6">
+        <div className="h-full md:h-1/3 bg-[#F3B42C] p-3 lg:p-4 grid grid-cols-1 lg:grid-cols-2 justify-around items-center text-white gap-2 md:gap-6">
           <div className="flex items-center gap-2">
             <div className="bg-white p-3 rounded-full text-[#313131] shrink-0">
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-              </svg>
+              <EnvelopeSimple weight="fill" className=" w-6 h-6 "/>
             </div>
             <div className="text-sm">
-              <p className="font-semibold">johat1011953@outlook.com</p>
-              <p>+1-231-427-2289</p>
+               <a href="mailto:johat1o11953@outlook.com" className="text-xs sm:text-sm xl:text-base">johat1o11953@outlook.com</a><br/>
+              <a href="tel:+1-231-427-2289" className="text-xs sm:text-sm xl:text-base">+1-231-427-2289</a>
             </div>
           </div>
           <div className="flex items-center gap-2">
             <div className="bg-white p-3 rounded-full text-[#313131] shrink-0">
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z" />
-              </svg>
+              <MapTrifoldIcon weight="fill" className="w-6 h-6"/>
             </div>
             <div className="text-sm leading-tight">
-              <p className="font-semibold">3975 Pulverwoods Rd,</p>
-              <p>Williamsburg, MI 49690, USA</p>
+              <a href="https://maps.app.goo.gl/PeXnxYz9fCtw14re8" className="text-xs sm:text-sm xl:text-base">
+                                3795 Plymouth Rd<br />
+                                Williamsburg, MI 49690, USA
+                            </a>
             </div>
           </div>
         </div>

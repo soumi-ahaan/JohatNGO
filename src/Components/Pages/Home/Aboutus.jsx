@@ -63,7 +63,7 @@ const Aboutus = () => {
         {/* Right Column: Content */}
         <div  ref={rightRef} className="space-y-3 lg:space-y-6">
           <div className="space-y-2">
-            <span className="relative inline-block text-[#FFAC00] italic text-xl md:text-[24px] font-caveat font-bold after:content-[''] after:absolute after:left-0 after:top-0 after:w-1/2 after:border-t-2 after:border-yellow-500">
+            <span className="relative inline-block text-[#FFAC00] italic text-xl md:text-[24px] font-caveat font-bold after:content-[''] after:absolute after:left-0 after:top-0 after:w-1/2 after:border-t-2 after:border-yellow-500 pt-2">
               About Us
             </span>
             <h2 className="font-display font-bold text-[32px] lg:text-[50px] leading-[45px] lg:leading-[60px] tracking-[-2px] text-slate-900 align-middle">
@@ -112,7 +112,7 @@ const Aboutus = () => {
           {/* CTA Button */}
           <div className="pt-4">
             <Link to="/about-us">
-            <button className="cursor-pointer bg-[#FFAC00] text-white font-bold px-8 py-3 lg:py-4 lg:px-15 uppercase tracking-widest text-xs transition-colors duration-200 transform -skew-x-12">
+            <button className="cursor-pointer bg-[#FFAC00] text-white font-bold px-8 py-3 lg:py-4 lg:px-12 uppercase tracking-widest text-xs hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 transform -skew-x-12">
               <span className="inline-block skew-x-12">Learn More</span>
             </button>
             </Link>

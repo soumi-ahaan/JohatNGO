@@ -109,7 +109,7 @@ export default function Homebanner() {
                 {/* SUBTITLE */}
                 <div className="flex flex-col items-start gap-3 mb-2">
                   <div className="w-10 h-[2px] bg-[#FFAC00]" />
-                  <p className="text-md md:text-2xl text-[#FFAC00] italic font-caveat">
+                  <p className="text-md md:text-2xl text-[#FFAC00] italic font-caveat font-bold">
                     {slide.subtitle}
                   </p>
                 </div>
