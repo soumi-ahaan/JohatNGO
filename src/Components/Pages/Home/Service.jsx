@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {ArrowRightIcon} from "@phosphor-icons/react";
 import { getServices, getImageById } from "../../../Api/Api";
 
 const Service = () => {
@@ -102,14 +103,14 @@ const Service = () => {
               </p>
 
               {/* ➡️ BUTTON */}
-              <div className="mt-8 flex justify-center">
-                <div className="cursor-pointer w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 shadow-sm">
-                  →
+              <div className="mt-8 -mb-18 flex justify-center z-20">
+                <div className="cursor-pointer w-12 h-12 rounded-full bg-[#F2F2F2] flex items-center justify-center text-gray-500 shadow-sm">
+                 <ArrowRightIcon size={16} weight="bold" />
                 </div>
               </div>
 
               {/* 🔥 BOTTOM FADE (important) */}
-              <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-gray-100/80 to-transparent rounded-b-2xl pointer-events-none"></div>
+              <div className=" -z-10 absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-gray-100/80 to-transparent rounded-b-2xl pointer-events-none"></div>
 
             </div>
           </div>

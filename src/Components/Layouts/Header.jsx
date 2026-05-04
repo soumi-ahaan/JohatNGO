@@ -19,7 +19,7 @@ export default function Header() {
             <a href="/" className="text-decoration-none"><img
               src={logo}
               alt="logo"
-              className="w-[154px] h-[84px] object-contain"
+              className="w-[134px] md:w-[154px] h-[64px] md:h-[84px] object-contain"
             />
             </a>
           </div>
