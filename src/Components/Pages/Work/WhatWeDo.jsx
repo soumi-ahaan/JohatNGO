@@ -39,7 +39,7 @@ const WhatWeDo = () => {
           What We Do
         </p>
 
-        <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-800 mb-10 sm:mb-12 lg:mb-14 font-display leading-tight">
+        <h2 className="text-[22px] md:text-[32px] lg:text-5xl font-bold text-gray-800 mb-10 sm:mb-12 lg:mb-14 font-display leading-tight">
           Helping Lives, Creating Hope.
         </h2>
 

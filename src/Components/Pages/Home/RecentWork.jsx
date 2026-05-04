@@ -95,7 +95,7 @@ const RecentWork = () => {
                     Complete Projects
                   </p>
           <div className="flex justify-between items-center">
-            <h2 className="text-[32px] lg:text-[50px] leading-[45px] lg:leading-[60px] tracking-[-2px] font-bold text-gray-800 font-display">
+            <h2 className=" text-2xl md:text-[32px] lg:text-[50px] leading-[45px] lg:leading-[60px] tracking-[-2px] font-bold text-gray-800 font-display">
               Our Recent Work
             </h2>
             <Link to="/event" className="bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 text-sm md:text-base md:px-12 md:py-4 hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 cursor-pointer">

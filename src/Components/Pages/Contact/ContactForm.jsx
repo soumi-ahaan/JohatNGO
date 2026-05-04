@@ -64,7 +64,7 @@ const required = { required: "This field is required" };
                     Contact Now
                   </p>
 
-                <h2 className="font-display text-[32px] lg:text-[50px] leading-[45px] lg:leading-[60px] tracking-[-2px] font-bold text-slate-900  mt-2">
+                <h2 className="font-display text-[28px] md:text-[32px] lg:text-[50px] leading-[45px] lg:leading-[60px] tracking-[-2px] font-bold text-slate-900  mt-2">
                     Get In Touch
                 </h2>
                 <form  onSubmit={handleSubmit(onSubmitForm)}  className="mt-[35px] space-y-4">
