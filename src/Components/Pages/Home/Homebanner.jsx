@@ -95,7 +95,7 @@ export default function Homebanner() {
             <div
               className="
                 absolute -top-4 left-0 h-[909px] bg-[#1A685B]
-                w-[66%] sm:w-[72%] lg:w-[55%] xl:w-[44%]
+                w-[66%] sm:w-[74%] lg:w-[55%] xl:w-[46%]
               "
               style={{
     clipPath: "polygon(0% 0%, 100% 0%, 66% 100%, 0% 100%)",

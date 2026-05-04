@@ -15,7 +15,7 @@ export default function TopHeader() {
       <div className="absolute inset-0 bg-[#F2F0EC]" />
 
       {/* LEFT SLANTED BACKGROUND (PIXEL PERFECT) */}
-      <div  className="absolute top-0 left-0 h-full bg-[#FFAC00] w-[68%] sm:w-[78%] lg:w-[58%] xl:w-[50%] 2xl:w-[46%] " style={{
+      <div  className="absolute top-0 left-0 h-full bg-[#FFAC00] w-[68%] sm:w-[78%] lg:w-[58%] xl:w-[48%]" style={{
     clipPath: "polygon(0% 0%, 100% 0%, 98% 100%, 0% 100%)",
   }}
 />
