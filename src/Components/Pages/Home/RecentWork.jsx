@@ -85,7 +85,7 @@ const RecentWork = () => {
   }, [works]);
 
   return (
-    <div ref={sectionRef} className="py-24">
+    <div ref={sectionRef} className="pt-10 pb-24 lg:py-24">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 xl:px-[72px] bg-white">
 
         {/* Heading */}
@@ -98,7 +98,7 @@ const RecentWork = () => {
             <h2 className=" text-2xl md:text-[32px] lg:text-[50px] leading-[45px] lg:leading-[60px] tracking-[-2px] font-bold text-gray-800 font-display">
               Our Recent Work
             </h2>
-            <Link to="/event" className="bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 text-sm md:text-base md:px-12 md:py-4 hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 cursor-pointer">
+            <Link to="/event" className="bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 text-sm lg:text-base lg:px-12 lg:py-4 hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 cursor-pointer">
               <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
                 View All
               </span>
@@ -107,7 +107,7 @@ const RecentWork = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-3 gap-[19px]">
+        <div className="grid grid-cols-3 sm:grid-cols-3 gap-[19px]">
 
           {works.map((item, i) => {
             const imageUrl = images[item.acf?.image];
@@ -122,7 +122,7 @@ const RecentWork = () => {
                 <img
                   src={imageUrl}
                   alt=""
-                  className="w-full h-[320px] object-cover rounded-2xl transition duration-500 group-hover:scale-105"
+                  className="w-full h-auto xl:h-[320px] object-cover rounded-2xl transition duration-500 group-hover:scale-105"
                 />
 
                 {/* Overlay */}

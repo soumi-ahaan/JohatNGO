@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 const CallToAction = () => {
   return (
-    <section className="relative h-[400px] md:h-[524px] w-full flex items-center justify-center text-center overflow-hidden">
+    <section className="relative h-[400px] md:h-[490px] lg:h-[524px] w-full flex items-center justify-center text-center overflow-hidden">
       {/* Background Image with Dark Overlay */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -18,7 +18,7 @@ const CallToAction = () => {
           We're here to support poor people
         </p>
  
-        <h1 className="font-display text-[22px] sm:text-[32px] md:text-[50px] font-bold text-white font-serif leading-tight">
+        <h1 className="font-display text-[22px] sm:text-3xl lg:text-[50px] font-bold text-white font-serif leading-tight">
           Your support <span className="relative inline-block">
             helps
            <img

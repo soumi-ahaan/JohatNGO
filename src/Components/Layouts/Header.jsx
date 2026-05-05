@@ -20,7 +20,7 @@ export default function Header() {
             <img
               src={logo}
               alt="logo"
-              className="w-[134px] md:w-[154px] h-[64px] md:h-[84px] object-contain"
+              className="w-[134px] lg:w-[154px] h-[64px] lg:h-[84px] object-contain"
             />
             </a>
           </div>
@@ -68,7 +68,7 @@ export default function Header() {
 
           {/* RIGHT BUTTON */}
           <div className="flex justify-end items-center py-[22px]">
-            <Link to="/contact" className="hidden md:inline-block bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 text-sm md:text-base md:px-9 md:py-4 hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 cursor-pointer">
+            <Link to="/contact" className="hidden md:inline-block bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 text-sm md:text-base lg:px-9 lg:py-4 hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 cursor-pointer">
               <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
                 Give Support
               </span>
@@ -135,7 +135,7 @@ export default function Header() {
           </NavLink>
 
 
-          <Link to="/contact" className="md:hidden bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 text-sm md:text-base md:px-9 md:py-4  mx-6 cursor-pointer">
+          <Link to="/contact" className="md:hidden bg-[#FFAC00] -skew-x-[12deg] w-fit py-2 px-7 text-sm md:text-base ml-6 mr-12 cursor-pointer">
             <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
               Give Support
             </span>

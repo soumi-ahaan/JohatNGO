@@ -44,7 +44,7 @@ const WhatWeDo = () => {
         </h2>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {data.map((item, index) => {
             const title = item.title.rendered;
             const desc = item.content.rendered;
@@ -58,7 +58,7 @@ const WhatWeDo = () => {
                 className="
                 bg-[#f1ede7] rounded-2xl 
                 p-4
-                flex flex-col lg:flex-row 
+                flex flex-col xl:flex-row 
                 items-center
                 gap-4 lg:gap-6 
                 border border-[#D7D7D7] 
@@ -72,7 +72,7 @@ const WhatWeDo = () => {
                   className="
                   w-full 
                   h-[220px] sm:h-[260px] 
-                  lg:w-[240px] 
+                  xl:w-[240px] 
                   lg:h-[260px] 
                   object-cover rounded-xl flex-shrink-0
                   "

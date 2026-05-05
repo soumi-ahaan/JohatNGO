@@ -28,17 +28,17 @@ const VolunteerDonateSection = () => {
 
             {/* Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-              <h2 className="text-3xl md:text-4xl font-bold font-display mb-3">
+              <h2 className="text-3xl xl:text-4xl font-bold font-display mb-3">
                 Become a Volunteer
               </h2>
 
-              <p className="text-sm md:text-base mb-5 max-w-md">
+              <p className="text-sm lg:text-base mb-5 max-w-md">
                 Join us as a volunteer to support food drives, education,
                 healthcare, and community programs, bringing hope to those in
                 need.
               </p>
 
-              <Link to="/contact" className="relative inline-block  cursor-pointer w-fit bg-[#FFAC00] -skew-x-[12deg] px-10 py-2.5 text-sm md:text-base  hover:scale-110 transition-all duration-300">
+              <Link to="/contact" className="relative inline-block  cursor-pointer w-fit bg-[#FFAC00] -skew-x-[12deg] px-8 py-2 lg:px-10 lg:py-2.5 text-sm md:text-base  hover:scale-110 transition-all duration-300">
                   <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
                    Join Now
                 </span>
@@ -60,11 +60,11 @@ const VolunteerDonateSection = () => {
 
             {/* Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-              <h2 className="text-3xl md:text-4xl font-bold font-display mb-3">
+              <h2 className="text-3xl xl:text-4xl font-bold font-display mb-3">
                 Donate Now
               </h2>
 
-              <p className="text-sm md:text-base mb-5 max-w-md">
+              <p className="text-sm lg:text-base mb-5 max-w-md">
                 Your donation helps provide food, education, healthcare, and
                 essential support to those in need, creating hope and a brighter
                 future.
@@ -72,7 +72,7 @@ const VolunteerDonateSection = () => {
 
               <button
                 onClick={() => setOpen(true)}
-                className="relative inline-block  cursor-pointer w-fit bg-[#FFAC00] -skew-x-[12deg] px-8 py-2.5 text-sm md:text-base  hover:scale-110 transition-all duration-300">
+                className="relative inline-block  cursor-pointer w-fit bg-[#FFAC00] -skew-x-[12deg] px-5 py-2 lg:px-8 lg:py-2.5 text-sm md:text-base  hover:scale-110 transition-all duration-300">
                   <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
                     Donate Now
                 </span>

@@ -3,7 +3,7 @@ import bannerImg from "../../../assets/work-banner.jpg";
 
 const WorkBanner = () => {
   return (
-    <div className="relative w-full h-[400px] md:h-[550px] flex items-center justify-center overflow-hidden">
+    <div className="relative w-full h-[220px] md:h-[300px] lg:h-[350px] xl:h-[550px] flex items-center justify-center overflow-hidden">
       
       {/* Background Image */}
       <img
