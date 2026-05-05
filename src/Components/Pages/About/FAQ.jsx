@@ -45,7 +45,7 @@ const FAQ = () => {
 
                 {/* RIGHT CONTENT */}
                 <div className="flex items-center">
-                    <div className="w-full max-w-[720px] px-[20px] md:px-[40px] xl:px-[72px] py-[60px] lg:py-[80px]">
+                    <div className="w-full max-w-[720px] px-4 md:px-8 lg:px-12 xl:px-[72px] py-[60px] lg:py-[80px]">
 
                         {/* TOP */}
                         <div className="space-y-2 mb-[30px]">
