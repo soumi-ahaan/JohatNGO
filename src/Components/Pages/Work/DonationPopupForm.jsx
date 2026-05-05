@@ -221,6 +221,7 @@ const required = { required: "This field is required" };
           <input
             {...register("amount", { required: "Please donate some amount" })}
             type="number"
+            min="1"
             placeholder="Donate Amount"
             className="input-modern"
           />
@@ -239,7 +240,7 @@ const required = { required: "This field is required" };
           {/* Submit Button */}
           <button
             type="submit"
-            className="md:col-span-2 bg-[#f59e0b] hover:bg-[#d97706] transition-all duration-300 text-white py-3 rounded-lg font-semibold shadow-md"
+            className="cursor-pointer md:col-span-2 bg-[#f59e0b] hover:bg-[#d97706] transition-all duration-300 text-white py-3 rounded-lg font-semibold shadow-md"
           >
             Submit Now
           </button>
