@@ -64,10 +64,9 @@ const {
       console.log("API Response:", res); // 👈 CHECK RESPONSE
   
       if (res?.success || res?.status === 200) {
-        alert("✅ Submitted!");
-        reset();
-        onClose();
-      } else {
+  alert("✅ Submitted!");
+  reset();
+} else {
         console.log("Unexpected response:", res);
         alert("❌ Submission failed");
       }
@@ -170,7 +169,7 @@ const required = { required: "This field is required" };
               <button
             type="submit"
             disabled={submitting}
-            className={`bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 md:px-8 md:py-3 transition-all duration-300
+            className={`cursor-pointer bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 md:px-8 md:py-3 transition-all duration-300
     ${submitting ? "opacity-50 cursor-not-allowed" : "hover:bg-[#1F6B5A] hover:scale-110"}
   `}
           >
