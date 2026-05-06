@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import TopHeader from "./Components/Layouts/TopHeader";
 import Header from "./Components/Layouts/Header";
 import Footer from "./Components/Layouts/Footer";
@@ -9,10 +9,21 @@ import WorkComponents from "./Components/Pages/Work/WorkComponents";
 import EventComponents from "./Components/Pages/Event/EventComponents";
 import ContactComponents from "./Components/Pages/Contact/ContactComponents";
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop />
       <TopHeader/>
       <Header/>
         <Routes>
