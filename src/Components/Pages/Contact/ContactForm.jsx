@@ -265,8 +265,8 @@ export default function ContactForm() {
             </div>
             <div>
               <p className="font-medium text-base sm:text-xl xl:text-[30px] leading-relaxed font-display">Phone</p>
-              <a href="tel:+1-231-427-2289" className="text-xs sm:text-sm xl:text-base">+1-231-427-2289</a><br />
-              <a href="tel:+1-231-459-6853" className="text-xs sm:text-sm xl:text-base">+1-231-459-6853</a>
+              <a href="tel:+12314272289" className="text-xs sm:text-sm xl:text-base">+1-231-427-2289</a><br />
+              <a href="tel:+12314596853" className="text-xs sm:text-sm xl:text-base">+1-231-459-6853</a>
             </div>
           </div>
 

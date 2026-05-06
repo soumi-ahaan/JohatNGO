@@ -130,7 +130,7 @@ const Donation = () => {
             </div>
             <div className="text-sm">
                <a href="mailto:jat1o1o1953@gmail.com" className="text-xs sm:text-sm xl:text-base">jat1o1o1953@gmail.com</a><br/>
-              <a href="tel:+1-231-427-2289" className="text-xs sm:text-sm xl:text-base">+1-231-427-2289</a>
+              <a href="tel:+12314272289" className="text-xs sm:text-sm xl:text-base">+1-231-427-2289</a>
             </div>
           </div>
           <div className="flex items-center gap-2">
