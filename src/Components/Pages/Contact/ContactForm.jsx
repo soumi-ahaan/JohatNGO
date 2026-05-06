@@ -280,8 +280,9 @@ export default function ContactForm() {
 
             <div>
               <p className="font-medium text-base sm:text-xl xl:text-[30px] leading-relaxed font-display">Email</p>
-              <a href="mailto:johat1o11953@outlook.com" className="text-xs sm:text-sm xl:text-base">johat1o11953@outlook.com</a><br />
-              <a href="mailto:james@johatenterises.com" className="text-xs sm:text-sm xl:text-base">james@johatenterises.com</a>
+              <a href="mailto:jat1o1o1953@gmail.com" className="text-xs sm:text-sm xl:text-base">jat1o1o1953@gmail.com</a>
+              {/* <a href="mailto:johat1o11953@outlook.com" className="text-xs sm:text-sm xl:text-base">johat1o11953@outlook.com</a><br />
+              <a href="mailto:james@johatenterises.com" className="text-xs sm:text-sm xl:text-base">james@johatenterises.com</a> */}
             </div>
           </div>
 

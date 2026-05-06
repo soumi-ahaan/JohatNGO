@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Phone, EnvelopeSimpleOpenIcon, MapTrifoldIcon } from "@phosphor-icons/react";
+import { Phone, EnvelopeSimpleOpenIcon, MapTrifoldIcon} from "@phosphor-icons/react";
 import { submitDonation } from "../../../Api/Api";
 import { Link } from "react-router-dom";
 const Donation = () => {
@@ -129,7 +129,7 @@ const Donation = () => {
               <EnvelopeSimpleOpenIcon weight="fill" className=" w-6 h-6 "/>
             </div>
             <div className="text-sm">
-               <a href="mailto:johat1o11953@outlook.com" className="text-xs sm:text-sm xl:text-base">johat1o11953@outlook.com</a><br/>
+               <a href="mailto:jat1o1o1953@gmail.com" className="text-xs sm:text-sm xl:text-base">jat1o1o1953@gmail.com</a><br/>
               <a href="tel:+1-231-427-2289" className="text-xs sm:text-sm xl:text-base">+1-231-427-2289</a>
             </div>
           </div>
