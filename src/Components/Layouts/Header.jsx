@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import { Link, NavLink } from "react-router-dom";
+import {
+  EnvelopeSimpleIcon,
+  PhoneIcon,
+  FacebookLogoIcon,
+  XLogoIcon,
+  InstagramLogoIcon,
+  LinkedinLogoIcon
+} from "@phosphor-icons/react";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -17,11 +25,11 @@ export default function Header() {
           {/* LEFT LOGO */}
           <div className="flex items-center">
             <a href="/" className="text-decoration-none">
-            <img
-              src={logo}
-              alt="logo"
-              className="w-[134px] lg:w-[154px] h-[64px] lg:h-[84px] object-contain"
-            />
+              <img
+                src={logo}
+                alt="logo"
+                className="w-[134px] lg:w-[154px] h-[64px] lg:h-[84px] object-contain"
+              />
             </a>
           </div>
 
@@ -140,8 +148,21 @@ export default function Header() {
               Give Support
             </span>
           </Link>
+        </div>
 
-
+        <div className="flex items-center gap-[13.8px] mt-6 ml-6">
+          <a href="https://www.facebook.com/johat1953" target="_blank" className="bg-[#1F6B5A] p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
+            <FacebookLogoIcon className="w-6 h-6" />
+          </a>
+          <a href="https://x.com/JohatEnter3002" target="_blank" className="bg-[#1F6B5A] p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
+            <XLogoIcon className="w-6 h-6" />
+          </a>
+          <a href="https://www.instagram.com/accounts/login/?next=%2Fjohatenterprises%2F&source=omni_redirect" target="_blank" className="bg-[#1F6B5A] p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
+            <InstagramLogoIcon className="w-6 h-6" />
+          </a>
+          <a href="https://www.linkedin.com/in/james-taylor-69b20544/" target="_blank" className="bg-[#1F6B5A] p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
+            <LinkedinLogoIcon className="w-6 h-6" />
+          </a>
         </div>
       </div>
 
