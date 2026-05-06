@@ -4,40 +4,80 @@ import { Phone, EnvelopeSimpleOpenIcon, MapTrifoldIcon} from "@phosphor-icons/re
 import { submitDonation } from "../../../Api/Api";
 import { Link } from "react-router-dom";
 const Donation = () => {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
+  // const [form, setForm] = useState({
+  //   name: "",
+  //   email: "",
+  //   subject: "",
+  //   message: "",
+  // });
+
+  // const handleChange = (e) => {
+  //   setForm({
+  //     ...form,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   try {
+  //     const res = await submitDonation(form);
+
+  //     if (res.success) {
+  //       alert("✅ Submitted!");
+  //       setForm({
+  //         name: "",
+  //         email: "",
+  //         subject: "",
+  //         message: "",
+  //       });
+  //     }
+  //   } catch (err) {
+  //     console.error(err);
+  //     alert("❌ Error");
+  //   }
+  // };
+
+
+const [submitting, setSubmitting] = useState(false);
+const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+    reset,
+    setValue,
+  } = useForm({
+    mode: "onChange",
+    defaultValues: {
+      phone: "",
+    },
   });
 
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
+  const onSubmitForm = async (data) => {
     try {
-      const res = await submitDonation(form);
-
-      if (res.success) {
+      console.log("Sending Data:", data); // 👈 CHECK THIS FIRST
+  
+      const res = await submitDonation(data);
+  
+      console.log("API Response:", res); // 👈 CHECK RESPONSE
+  
+      if (res?.success || res?.status === 200) {
         alert("✅ Submitted!");
-        setForm({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
+        reset();
+        onClose();
+      } else {
+        console.log("Unexpected response:", res);
+        alert("❌ Submission failed");
       }
+  
     } catch (err) {
-      console.error(err);
-      alert("❌ Error");
+      console.error("API ERROR:", err);
+      alert("❌ Error submitting form");
     }
   };
+const required = { required: "This field is required" };
 
   return (
     <section className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 overflow-hidden">
@@ -65,50 +105,79 @@ const Donation = () => {
             </h2>
           </div>
 
-          <form className="space-y-4 " onSubmit={handleSubmit}>
+          <form className="space-y-4 " onSubmit={handleSubmit(onSubmitForm)}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex flex-col gap-1">
               <input
                 type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
+                {...register("name", {
+                      required: "Name is required",
+                      pattern: {
+                        value:
+                          /^[A-Za-z\s]+$/,
+                        message: "Only letters are allowed",
+                      },
+                    })}
                 placeholder="Name"
                 className="w-full p-4 rounded-lg bg-white border-none focus:ring-2 focus:ring-amber-500 shadow-sm outline-none"
               />
+              {errors.name && (
+                    <p className="text-red-500 ">{errors.name.message}</p>
+                  )}
+                  </div>
+              <div className="flex flex-col gap-1">
               <input
                 type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
+                {...register("email", {
+              required: "Email is required",
+              pattern: {
+                value:
+                  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|net|org|in)$/,
+                message: "Invalid email",
+              },
+            })}
                 placeholder="Email"
                 className="w-full p-4 rounded-lg bg-white border-none focus:ring-2 focus:ring-amber-500 shadow-sm outline-none"
               />
-            </div>
+              {errors.email && (
+            <p className="text-red-500">{errors.email.message}</p>
+          )}
+          </div>
+      </div>
 
             <input
               type="text"
-              name="subject"
-              value={form.subject}
-              onChange={handleChange}
+              {...register("subject", {
+                      required: "Subject is required",
+                    })}
               placeholder="Subject"
               className="w-full p-4 rounded-lg bg-white border-none focus:ring-2 focus:ring-amber-500 shadow-sm outline-none"
             />
+            {errors.subject && (
+            <p className="text-red-500">{errors.subject.message}</p>
+          )}
 
             <textarea
               name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="Message"
+              {...register("message")}
               rows={4}
+              placeholder="Message"
               className="w-full p-4 rounded-lg bg-white border-none focus:ring-2 focus:ring-amber-500 shadow-sm outline-none"
             ></textarea>
 
+
             <div className="pt-4">
-              <button type="submit" className="cursor-pointer bg-[#FFAC00] text-white font-bold px-8 py-3 lg:py-4 lg:px-9 uppercase tracking-widest text-xs hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 cursor-pointer transform -skew-x-12">
-                <span className="inline-block skew-x-12 text-xs uppercase tracking-widest">
-                  Send a Message
-                </span>
-              </button>
+              <button
+            type="submit"
+            disabled={submitting}
+            className={`bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 md:px-8 md:py-3 transition-all duration-300
+    ${submitting ? "opacity-50 cursor-not-allowed" : "hover:bg-[#1F6B5A] hover:scale-110"}
+  `}
+          >
+            <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
+              {submitting ? "Sending..." : "Sent a message"}
+            </span>
+          </button>
             </div>
           </form>
         </div>
