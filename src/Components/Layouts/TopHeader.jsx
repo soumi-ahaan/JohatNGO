@@ -31,7 +31,7 @@ export default function TopHeader() {
             <div className="bg-[#1F6B5A] p-1 md:p-2 rounded-full">
               <EnvelopeSimpleIcon  weight="fill" className="w-4 h-4 lg:w-6 lg:h-6"/>
             </div>
-            <a href="mailto: jat1o1o1953@gmail.com" className="cursor-pointer text-[10px] sm:text-xs font-semibold">
+            <a href="mailto:jat1o1o1953@gmail.com" className="cursor-pointer text-[10px] sm:text-xs font-semibold">
                jat1o1o1953@gmail.com
             </a>
           </div>
@@ -50,16 +50,16 @@ export default function TopHeader() {
 
         {/* RIGHT CONTENT */}
         <div className="flex items-center gap-[13.8px]">
-          <a href="https://www.facebook.com/johat1953" className="bg-[#1F6B5A] p-1 md:p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
+          <a href="https://www.facebook.com/johat1953" target="_blank" className="bg-[#1F6B5A] p-1 md:p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
             <FacebookLogoIcon className="w-4 h-4 lg:w-6 lg:h-6" />
           </a>
-          <a href="https://x.com/JohatEnter3002" className="bg-[#1F6B5A] p-1 md:p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
+          <a href="https://x.com/JohatEnter3002" target="_blank" className="bg-[#1F6B5A] p-1 md:p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
             <XLogoIcon className="w-4 h-4 lg:w-6 lg:h-6" />
           </a>
-          <a href="https://www.instagram.com/accounts/login/?next=%2Fjohatenterprises%2F&source=omni_redirect" className="bg-[#1F6B5A] p-1 md:p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
+          <a href="https://www.instagram.com/accounts/login/?next=%2Fjohatenterprises%2F&source=omni_redirect" target="_blank" className="bg-[#1F6B5A] p-1 md:p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
             <InstagramLogoIcon className="w-4 h-4 lg:w-6 lg:h-6" />
           </a>
-          <a href="https://www.linkedin.com/in/james-taylor-69b20544/" className="bg-[#1F6B5A] p-1 md:p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
+          <a href="https://www.linkedin.com/in/james-taylor-69b20544/" target="_blank" className="bg-[#1F6B5A] p-1 md:p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
             <LinkedinLogoIcon className="w-4 h-4 lg:w-6 lg:h-6" />
           </a>
         </div>
