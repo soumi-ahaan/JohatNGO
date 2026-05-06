@@ -53,7 +53,7 @@ export default function Header() {
                   ? "lg:px-4 py-2.5 text-sm lg:text-base font-[550] text-[#FFAC00]"
                   : "lg:px-4 py-2.5 text-sm lg:text-base font-[550] text-[#313131] hover:text-[#FFAC00] hover:scale-110 transition-all duration-300"
               }
-            >Our Work
+            >Our Works
             </NavLink>
             <NavLink
               to="/event"
@@ -62,7 +62,7 @@ export default function Header() {
                   ? "lg:px-6 py-2.5 text-sm lg:text-base font-[550] text-[#FFAC00]"
                   : "lg:px-6 py-2.5 text-sm lg:text-base font-[550] text-[#313131] hover:text-[#FFAC00] hover:scale-110 transition-all duration-300"
               }
-            >Event
+            >Events
             </NavLink>
           </nav>
 
@@ -122,7 +122,7 @@ export default function Header() {
                 ? "px-6 py-4 text-base font-[550] bg-[#FFAC00] text-white"
                 : "px-6 py-4 text-base font-[550] bg-transparent text-[#313131]"
             }
-          >Our Work
+          >Our Works
           </NavLink>
           <NavLink
             to="/event"
@@ -131,7 +131,7 @@ export default function Header() {
                 ? "px-6 py-4 text-base font-[550] bg-[#FFAC00] text-white"
                 : "px-6 py-4 text-base font-[550] bg-transparent text-[#313131]"
             }
-          >Event
+          >Events
           </NavLink>
 
 
