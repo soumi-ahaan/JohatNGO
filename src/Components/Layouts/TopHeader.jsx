@@ -49,7 +49,7 @@ export default function TopHeader() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="hidden sm:flex items-center gap-[13.8px]">
+        <div className="hidden md:flex items-center gap-[13.8px]">
           <a href="https://www.facebook.com/johat1953" target="_blank" className="bg-[#1F6B5A] p-1 md:p-2 rounded-full text-white hover:bg-[#FFAC00] hover:scale-110 transition-all duration-300 cursor-pointer">
             <FacebookLogoIcon className="w-4 h-4 lg:w-6 lg:h-6" />
           </a>
