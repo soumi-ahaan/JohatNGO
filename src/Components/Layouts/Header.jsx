@@ -147,7 +147,7 @@ export default function Header() {
           </NavLink>
 
 
-          <Link to="/contact" className="md:hidden bg-[#FFAC00] -skew-x-[12deg] w-fit py-2 px-7 text-sm md:text-base ml-6 mr-12 cursor-pointer">
+          <Link to="/contact" onClick={() => setOpen(false)}  className="md:hidden bg-[#FFAC00] -skew-x-[12deg] w-fit py-2 px-7 text-sm md:text-base ml-6 mr-12 cursor-pointer">
             <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
               Give Support
             </span>
