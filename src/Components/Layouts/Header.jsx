@@ -106,6 +106,7 @@ export default function Header() {
 
           <NavLink
             to="/"
+             onClick={() => setOpen(false)}
             className={({ isActive }) =>
               isActive
                 ? "px-6 py-4 text-base font-[550] bg-[#FFAC00] text-white"
@@ -116,6 +117,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/about-us"
+             onClick={() => setOpen(false)}
             className={({ isActive }) =>
               isActive
                 ? "px-6 py-4 text-base font-[550] bg-[#FFAC00] text-white"
@@ -125,6 +127,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/our-work"
+             onClick={() => setOpen(false)} 
             className={({ isActive }) =>
               isActive
                 ? "px-6 py-4 text-base font-[550] bg-[#FFAC00] text-white"
@@ -134,6 +137,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/event"
+             onClick={() => setOpen(false)}               
             className={({ isActive }) =>
               isActive
                 ? "px-6 py-4 text-base font-[550] bg-[#FFAC00] text-white"
