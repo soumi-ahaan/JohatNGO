@@ -245,7 +245,7 @@ export default function ContactForm() {
       </div>
 
       {/* RIGHT: MAP */}
-      <div className="relative w-full h-[500px] lg:h-auto">
+      <div className="relative w-full h-[600px] lg:h-auto">
 
         {/* Google Map */}
         <iframe
@@ -256,15 +256,15 @@ export default function ContactForm() {
         ></iframe>
 
         {/* YELLOW CARD */}
-        <div className="absolute left-0 bottom-0 bg-[#FFAC00] text-white px-4 py-8 md:w-[40%] space-y-4 xl:pl-9 xl:pr-14 xl:py-[44px] lg:w-[55%] xl:space-y-6 shadow-lg">
+        <div className="absolute left-0 bottom-0 bg-[#FFAC00] text-white p-4 md:w-[20%] space-y-2 sm:space-y-4 xl:pl-9 xl:pr-14 xl:py-[44px] lg:w-[55%] xl:space-y-6 shadow-lg">
 
           {/* Phone */}
-          <div className="flex gap-6 border-b border-white/40 pb-2 xl:pb-6">
-            <div className="w-[48px] h-[48px] rounded-full bg-white/20 flex items-center justify-center">
-              <Phone className="text-white w-10 h-10 xl:w-14 xl:h-14  ml-5 mt-7" />
+          <div className="flex gap-6 border-b border-white/40 pb-1 xl:pb-6">
+            <div className="w-10 h-10 sm:w-[48px] sm:h-[48px] rounded-full bg-white/20 flex items-center justify-center">
+              <Phone className="text-white w-8 h-8 xl:w-14 xl:h-14  ml-5 mt-7" />
             </div>
             <div>
-              <p className="font-medium text-base sm:text-xl xl:text-[30px] leading-relaxed font-display">Phone</p>
+              <p className="font-medium text-sm sm:text-xl xl:text-[30px] leading-relaxed font-display">Phone</p>
               <a href="tel:+12314272289" className="text-xs sm:text-sm xl:text-base">+1-231-427-2289</a><br />
               <a href="tel:+12314596853" className="text-xs sm:text-sm xl:text-base">+1-231-459-6853</a>
             </div>
@@ -273,13 +273,13 @@ export default function ContactForm() {
 
 
           {/* Email */}
-          <div className="flex gap-6 border-b border-white/40 pb-2 xl:pb-6">
-            <div className="w-[48px] h-[48px] rounded-full bg-white/20 flex items-center justify-center">
-              <EnvelopeSimple weight="fill" className="text-white w-10 h-10 xl:w-14 xl:h-14  ml-5 mt-7" />
+          <div className="flex gap-6 border-b border-white/40 pb-1 xl:pb-6">
+            <div className="w-10 h-10 sm:w-[48px] sm:h-[48px] rounded-full bg-white/20 flex items-center justify-center">
+              <EnvelopeSimple weight="fill" className="text-white w-8 h-8 xl:w-14 xl:h-14  ml-5 mt-7" />
             </div>
 
             <div>
-              <p className="font-medium text-base sm:text-xl xl:text-[30px] leading-relaxed font-display">Email</p>
+              <p className="font-medium text-sm sm:text-xl xl:text-[30px] leading-relaxed font-display">Email</p>
               <a href="mailto:jat1o1o1953@gmail.com" className="text-xs sm:text-sm xl:text-base">jat1o1o1953@gmail.com</a>
               {/* <a href="mailto:johat1o11953@outlook.com" className="text-xs sm:text-sm xl:text-base">johat1o11953@outlook.com</a><br />
               <a href="mailto:james@johatenterises.com" className="text-xs sm:text-sm xl:text-base">james@johatenterises.com</a> */}
@@ -288,12 +288,12 @@ export default function ContactForm() {
 
           {/* Location */}
           <div className="flex gap-6">
-            <div className="w-[48px] h-[48px] rounded-full bg-white/20 flex items-center justify-center">
-              <MapPin weight="fill" className="text-white w-10 h-10 xl:w-14 xl:h-14  ml-5 mt-7" />
+            <div className="w-10 h-10 sm:w-[48px] sm:h-[48px] rounded-full bg-white/20 flex items-center justify-center">
+              <MapPin weight="fill" className="text-white w-8 h-8 xl:w-14 xl:h-14  ml-5 mt-7" />
             </div>
 
             <div>
-              <p className="font-medium text-base sm:text-xl xl:text-[30px] leading-relaxed font-display">Location</p>
+              <p className="font-medium text-sm sm:text-xl xl:text-[30px] leading-relaxed font-display">Location</p>
               <a href="https://maps.app.goo.gl/PeXnxYz9fCtw14re8" className="text-xs sm:text-sm xl:text-base">
                 3795 Plymouth Rd<br />
                 Williamsburg, MI 49690, USA
