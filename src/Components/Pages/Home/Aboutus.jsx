@@ -49,7 +49,7 @@ const Aboutus = () => {
 
   return (
         <div className="max-w-[1440px] mx-auto py-16 px-4 md:px-8 lg:px-9 xl:px-[72px] bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-12 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-[137px] items-start">
  
         {/* Left Column: Image Container */}
         <div className="relative h-[300px] md:h-[500px] lg:h-[640px] w-full overflow-hidden">
