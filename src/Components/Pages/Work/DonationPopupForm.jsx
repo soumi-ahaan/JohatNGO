@@ -50,7 +50,7 @@ const required = { required: "This field is required" };
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-white rounded-xl md:rounded-3xl w-full max-w-3xl p-5 md:p-10 relative shadow-xl"
+        className="bg-white rounded-xl md:rounded-3xl w-full max-w-3xl p-5 md:p-10 relative shadow-xl max-h-[90vh] overflow-y-auto"
       >
         {/* Close Button */}
         <button
