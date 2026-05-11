@@ -86,10 +86,11 @@ export default function ContactForm() {
 
   const required = { required: "This field is required" };
   return (
-    <div className="w-full grid grid-cols-1 lg:grid-cols-[1fr_1.05fr]">
+    <section className="bg-[#F7F7F7] overflow-hidden">
+    <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.05fr]">
 
       {/* LEFT: FORM */}
-      <div className="bg-[#F7F7F7] px-4 md:px-8 lg:px-12 xl:px-[72px] py-20 lg:py-[150px]">
+      <div className="relative px-4 md:px-8 lg:px-12 xl:px-[72px] py-20 lg:py-[150px]">
         <div className="w-10 h-[2px] bg-[#FFAC00]" />
         <p className="text-md md:text-2xl text-[#FFAC00] italic font-caveat pt-1">
           Contact Now
@@ -304,6 +305,7 @@ export default function ContactForm() {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

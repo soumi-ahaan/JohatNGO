@@ -79,8 +79,9 @@ const {
 const required = { required: "This field is required" };
 
   return (
-    <section className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 overflow-hidden">
-      <div className="relative bg-[#f8f8f8] p-4 md:p-6 lg:p-12 xl:p-[75px]  shadow-sm overflow-hidden">
+    <section className=" bg-[#f8f8f8]  overflow-hidden">
+      <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2">
+      <div className="relative   p-4 md:p-6 lg:p-12 xl:p-[75px]  shadow-sm overflow-hidden">
         {/* Background image with opacity */}
         <div
           className="absolute w-[250px] h-[250px] xl:w-[300px] xl:h-[300px] bg-no-repeat pointer-events-none "
@@ -198,7 +199,7 @@ const required = { required: "This field is required" };
             </div>
             <div className="text-sm">
                <a href="mailto:jat1o1o1953@gmail.com" className="text-xs sm:text-sm xl:text-base">jat1o1o1953@gmail.com</a><br/>
-              <a href="tel:+12314272289" className="text-xs sm:text-sm xl:text-base">+1-231-427-2289</a>
+              {/* <a href="tel:+12314272289" className="text-xs sm:text-sm xl:text-base">+1-231-427-2289</a> */}
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -213,6 +214,7 @@ const required = { required: "This field is required" };
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
