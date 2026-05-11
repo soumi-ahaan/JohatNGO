@@ -5,7 +5,7 @@ const CallToAction = () => {
     <section className="relative h-[400px] md:h-[490px] lg:h-[524px] w-full flex items-center justify-center text-center overflow-hidden">
       {/* Background Image with Dark Overlay */}
       <div
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 z-0 bg-cover bg-top bg-no-repeat"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/cta.jpg')`,
           filter: 'grayscale(100%)'

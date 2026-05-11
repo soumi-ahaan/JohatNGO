@@ -121,14 +121,14 @@ const Testimonials = () => {
 
       {/* BACKGROUND */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0  bg-contain bg-left bg-no-repeat"
         style={{
           backgroundImage:
             "url('https://johatngo.ahaanmedia.com/wp-content/uploads/2026/04/Image-3.png')",
         }}
       />
 
-      <div className="absolute inset-0 bg-[#F2F2F2]/70"></div>
+      {/* <div className="absolute inset-0 bg-[#F2F2F2]/10"></div> */}
 
       <div className="relative max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 md:gap-20 items-center px-6">
 
@@ -153,7 +153,7 @@ const Testimonials = () => {
           <img
             src={halftone}
             alt=""
-            className="absolute right-0 top-0 h-full w-auto pointer-events-none select-none"
+            className="absolute right-0 top-0 w-full h-full object-contain pointer-events-none select-none"
           />
 
           <div
