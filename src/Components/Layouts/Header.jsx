@@ -99,7 +99,7 @@ export default function Header() {
 
       {/* OFF-CANVAS MENU */}
       <div
-        className={`fixed top-0 right-0 h-full w-[280px] bg-white shadow-lg z-50 transform transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 right-0 h-screen w-[280px] bg-white shadow-lg z-50 overflow-y-auto no-scrollbar transform transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"
           }`}
       ><button onClick={() => setOpen(false)} className="ml-6 my-6 py-1 px-2.5 text-xl left-0 bg-[#1F6B5A] text-white rounded-full">✕</button>
         <div className=" flex flex-col gap-6">
