@@ -12,7 +12,7 @@ body{
 }
 
 .input-modern {
-  @apply w-full bg-[#1f6b5b11] border border-[#1f6b5b3f] rounded-lg px-4 py-3 text-gray-700 placeholder-[#1f6b5b85] outline-none transition-all duration-300;
+  @apply w-full bg-[#1f6b5b11] border border-[#1f6b5b3f] rounded-lg  p-2 sm:px-4 sm:py-3 text-gray-700 text-xs sm:text-base placeholder-[#1f6b5b85] outline-none transition-all duration-300;
 }
 
 .input-modern:focus {

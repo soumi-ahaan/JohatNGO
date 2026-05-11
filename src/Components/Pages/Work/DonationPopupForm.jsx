@@ -77,10 +77,10 @@ const required = { required: "This field is required" };
         {/* Form */}
         <form
          onSubmit={handleSubmit(onSubmitForm)}
-          className="grid grid-cols-1 md:grid-cols-2 gap-5"
+          className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-5"
         >
           {/* Inputs */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-1 sm:gap-2">
           <input
             {...register("first_name", {
                       required: "First Name is required",
@@ -97,7 +97,7 @@ const required = { required: "This field is required" };
                     <p className="text-red-500 text-xs">{errors.first_name.message}</p>
                   )}
                   </div>
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-1 sm:gap-2">
           <input
             {...register("last_name", {
                       required: "Last Name is required",
@@ -114,7 +114,7 @@ const required = { required: "This field is required" };
                     <p className="text-red-500 text-xs">{errors.last_name.message}</p>
                   )}
 </div>
-<div className="flex flex-col gap-2">
+<div className="flex flex-col gap-1 sm:gap-2">
           <input
            {...register("email", {
                       required: "Email is required",
@@ -132,7 +132,7 @@ const required = { required: "This field is required" };
                     <p className="text-red-500 text-xs">{errors.email.message}</p>
                   )}
 </div>
-<div className="flex flex-col gap-2">
+<div className="flex flex-col gap-1 sm:gap-2">
           <input
             {...register("phone", {
             required: "Phone number is required",
@@ -207,7 +207,7 @@ const required = { required: "This field is required" };
                     <p className="text-red-500 text-xs">{errors.address.message}</p>
                   )}
 </div>
-<div className="flex flex-col gap-2">
+<div className="flex flex-col gap-1 sm:gap-2">
           <input
             {...register("country", { required: "Country is required" })}
             placeholder="Country"
@@ -217,7 +217,7 @@ const required = { required: "This field is required" };
                     <p className="text-red-500 text-xs">{errors.country.message}</p>
                   )}
 </div>
-<div className="flex flex-col gap-2">
+<div className="flex flex-col gap-1 sm:gap-2">
           <input
             {...register("amount", { required: "Please donate some amount" })}
             type="number"
@@ -229,7 +229,7 @@ const required = { required: "This field is required" };
                     <p className="text-red-500 text-xs">{errors.amount.message}</p>
                   )}
 </div>
-<div className="flex flex-col gap-2 md:col-span-2">
+<div className="flex flex-col gap-1 sm:gap-2 md:col-span-2">
           <textarea
             {...register("comments")}
             placeholder="Comments"
@@ -240,7 +240,7 @@ const required = { required: "This field is required" };
           {/* Submit Button */}
           <button
             type="submit"
-            className="cursor-pointer md:col-span-2 bg-[#f59e0b] hover:bg-[#d97706] transition-all duration-300 text-white py-3 rounded-lg font-semibold shadow-md"
+            className="cursor-pointer md:col-span-2 bg-[#f59e0b] hover:bg-[#d97706] transition-all duration-300 text-white py-2 text-xs sm:text-base sm:py-3 rounded-lg font-semibold shadow-md"
           >
             Submit Now
           </button>
