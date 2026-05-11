@@ -257,7 +257,7 @@ export default function ContactForm() {
         ></iframe>
 
         {/* YELLOW CARD */}
-        <div className="absolute left-0 bottom-0 bg-[#FFAC00] text-white p-4 w-[20%] md:w-[35%] space-y-2 sm:space-y-4 xl:pl-9 xl:pr-14 xl:py-[44px] lg:w-[55%] xl:space-y-6 shadow-lg">
+        <div className="absolute left-0 bottom-0 bg-[#FFAC00] text-white p-4 w-[65%] space-y-2 sm:space-y-4 xl:pl-9 xl:pr-14 xl:py-[44px] md:w-[50%] xl:space-y-6 shadow-lg">
 
           {/* Phone */}
           <div className="flex gap-6 border-b border-white/40 pb-1 xl:pb-6">
