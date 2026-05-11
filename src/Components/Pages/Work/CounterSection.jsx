@@ -40,7 +40,7 @@ const CounterSection = () => {
     <div className="relative z-20 mt-25 ">
       <div className="absolute -top-[140px] md:-top-20 left-1/2 -translate-x-1/2 w-full max-w-[1440px] px-4 md:px-8 lg:px-12 xl:px-[72px]">
         
-        <div className="bg-[#FFAC00] rounded-2xl shadow-xl p-4 sm:p-6 md:py-8 md:px-6 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-white text-center">
+        <div className="bg-[#FFAC00] rounded-2xl shadow-[0px_0px_10px_5px_#00000026] p-4 sm:p-6 md:py-8 md:px-6 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-white text-center">
 
           <div className="flex flex-col items-center">
             <Users className="w-6 h-6 md:w-10 md:h-10" />

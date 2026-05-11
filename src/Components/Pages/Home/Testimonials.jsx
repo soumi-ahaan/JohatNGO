@@ -153,11 +153,11 @@ const Testimonials = () => {
           <img
             src={halftone}
             alt=""
-            className="absolute right-0 top-0 w-full h-full object-contain pointer-events-none select-none"
+            className="absolute inset-0 -top-40 bg-cover bg-center-top bg-no-repeat"
           />
 
           <div
-            className="flex"
+            className="flex "
             style={{
               transform: `translateX(-${index * slideWidth}%)`,
               transition: isTransitioning
