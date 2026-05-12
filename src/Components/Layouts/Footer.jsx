@@ -166,11 +166,11 @@ const Footer = () => {
         <div className="mt-[60px] mb-[42px] flex justify-center">
           <div className="w-full max-w-[1170px] bg-[#232323] rounded-[10px] px-[20px] xl:px-[30px] h-auto md:h-[100px] py-4 md:py-0 flex flex-col md:flex-row items-center justify-between">         {/* Left Text */}
             <p className="text-[15px] text-[#898989] text-center md:text-left">
-              © Copyright Year{" "}
+              © Copyright Year 2026{" "}
               <span className="text-[#FFAC00]">
                 Johat Charitable Trust
               </span>
-              . All Rights Reserved by{" "}
+              . Design and Developed by{" "}
               <a
                 href="https://ahaansoftware.com/"
                 target="_blank"
