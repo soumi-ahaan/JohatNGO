@@ -117,7 +117,7 @@ const Testimonials = () => {
   }
 
   return (
-    <section className="relative py-16 overflow-hidden bg-[#f2f2f2]/50">
+    <section className="relative pt-10 md:pt-32 pb-10 lg:py-16 overflow-hidden bg-[#f2f2f2]/50">
 
       {/* BACKGROUND */}
       <img
@@ -129,12 +129,12 @@ const Testimonials = () => {
   <img
     src={halftone}
     alt=""
-    className="absolute top-0 right-40 h-full w-auto max-w-3xl object-contain  pointer-events-none"
+    className="absolute -top-4 right-0 lg:right-40 h-full w-auto max-w-2xl object-contain  pointer-events-none"
   />
 
       {/* <div className="absolute inset-0 bg-[#F2F2F2]/10"></div> */}
 
-      <div className="relative max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 md:gap-20 items-center px-4 md:px-8 lg:px-12 xl:px-[72px]">
+      <div className="relative max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 xl:gap-20 items-center px-4 md:px-8 lg:px-12 xl:px-[72px]">
 
         {/* LEFT */}
         <div>
