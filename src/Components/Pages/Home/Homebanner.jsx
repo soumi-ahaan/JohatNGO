@@ -7,19 +7,19 @@ const slides = [
     image: bannerhome,
     subtitle: "Welcome to Johat Charitable Trust",
     title: ["Together", "We Can Help", "Those in Need"],
-    desc: ["Join us in making a difference by supporting communities, through food, education, and healthcare."],
+    desc: ["Join Us In Making a Difference By Supporting Communities, Through Food, Education, And Healthcare."],
   },
   {
     image: bannerhome,
     subtitle: "Welcome to Johat Charitable Trust",
     title: ["Together", "We Can Help", "Those in Need"],
-    desc: ["Join us in making a difference by supporting communities, through food, education, and healthcare."],
+    desc: ["Join Us In Making a Difference By Supporting Communities, Through Food, Education, And Healthcare."],
   },
   {
     image: bannerhome,
     subtitle: "Welcome to Johat Charitable Trust",
     title: ["Together", "We Can Help", "Those in Need"],
-    desc: ["Join us in making a difference by supporting communities, through food, education, and healthcare."],
+    desc: ["Join Us In Making a Difference By Supporting Communities, Through Food, Education, And Healthcare."],
   },
 ];
 
