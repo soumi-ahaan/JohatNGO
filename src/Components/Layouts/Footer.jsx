@@ -117,12 +117,12 @@ const Footer = () => {
                 />
 
                 <a
-                  href="https://maps.app.goo.gl/2kmyUZe9Ac4b7R2z8"
+                  href="https://maps.app.goo.gl/YoTJesW9QNg3Xaus6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[16px] font-medium leading-[24px] hover:translate-x-[6px] transition inline-block"
                 >
-                  3975 Purverwoods Rd, Williamsburg, MI 49690, USA
+                  3975 Pulverwoods Rd, Williamsburg, MI 49690, USA
                 </a>
               </li>
 
@@ -151,10 +151,10 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <EnvelopeSimpleOpenIcon size={28} weight="regular" className="text-[#FFAC00] shrink-0" />
                 <a
-                  href="mailto:jat1o1o1953@gmail.com"
+                  href="mailto:Johat1o153@gmail.com"
                   className="text-[16px] font-medium hover:translate-x-[6px] transition inline-block"
                 >
-                  jat1o1o1953@gmail.com
+                  Johat1o153@gmail.com
                 </a>
               </li>
 
