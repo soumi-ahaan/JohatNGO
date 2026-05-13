@@ -17,7 +17,7 @@ const EventBanner = () => {
 
       {/* Content */}
       <div className="z-10 relative max-w-[1440px] mx-auto items-center [px-4 md:px-8 lg:px-12 xl:px-[490px]">
-        <h1 className="text-white text-3xl sm:text-4xl xl:text-[60px] 2xl:text-[80px] leading-snug font-bold font-display">
+        <h1 className="text-white text-3xl sm:text-4xl xl:text-[60px] 2xl:text-[80px] leading-snug font-[900] font-display">
           Our Events
         </h1>
       </div>

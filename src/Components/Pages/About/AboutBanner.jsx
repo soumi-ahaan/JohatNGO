@@ -12,7 +12,7 @@ const AboutBanner = () => {
 
       {/* Center Content */}
       <div className="relative z-10 text-center">
-        <h1 className="text-white font-display font-black text-3xl sm:text-4xl xl:text-[60px] 2xl:text-[80px]">
+        <h1 className="text-white font-display font-[900] text-3xl sm:text-4xl xl:text-[60px] 2xl:text-[80px]">
           About Us
         </h1>
       </div>
