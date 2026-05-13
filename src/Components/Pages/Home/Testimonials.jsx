@@ -143,7 +143,7 @@ const Testimonials = () => {
             What They’re <br /> Talking About us
           </h2>
 
-          <p className="text-gray-500 max-w-md">
+          <p className="text-gray-500 text-base max-w-md">
             Our supporters, volunteers, and donors share their experiences and the positive impact our organization has made.
           </p>
         </div>
@@ -153,7 +153,7 @@ const Testimonials = () => {
           <img
             src={halftone}
             alt=""
-            className="absolute inset-0 -top-40 bg-cover bg-center-top bg-no-repeat"
+            className="absolute inset-0  -z-10  bg-contain bg-center-top bg-no-repeat"
           />
 
           <div
@@ -169,7 +169,7 @@ const Testimonials = () => {
             {extended.map((item, i) => (
               <div
                 key={i}
-                className="pt-10 w-full md:w-[85%] lg:w-[90%] xl:w-[85%] md:pr-6 flex-shrink-0"
+                className="z-0 pt-20 w-full md:w-[85%] lg:w-[90%] xl:w-[85%] md:pr-6 flex-shrink-0"
               >
                 <div className="bg-white rounded-2xl shadow-xl pt-16 px-4 pb-4 md:px-6 md:pb-6 xl:px-10 xl:pb-10 relative">
 
@@ -189,13 +189,13 @@ const Testimonials = () => {
 
                   <div className="mt-4">
                     <h3
-                      className="text-xl font-semibold font-display text-[#313131]"
+                      className="text-2xl font-bold font-display text-[#313131]"
                       dangerouslySetInnerHTML={{
                         __html: item?.title?.rendered || "",
                       }}
                     />
 
-                    <p className="text-[#6F6F6F] text-sm mb-2">
+                    <p className="text-[#6F6F6F] text-sm mb-2 ">
                       {item?.acf?.designation}
                     </p>
 

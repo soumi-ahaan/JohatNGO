@@ -31,7 +31,7 @@ export default function TopHeader() {
             <div className="bg-[#1F6B5A] p-1 md:p-2 rounded-full">
               <EnvelopeSimpleIcon  weight="fill" className="w-4 h-4 lg:w-6 lg:h-6"/>
             </div>
-            <a href="mailto:Johat1o153@gmail.com" className="cursor-pointer text-sm sm:text-xs font-semibold">
+            <a href="mailto:Johat1o153@gmail.com" className="cursor-pointer text-sm sm:text-xs font-bold">
                Johat1o153@gmail.com
             </a>
           </div>
@@ -40,7 +40,7 @@ export default function TopHeader() {
             <div className="bg-[#1F6B5A] p-1 md:p-2 rounded-full ">
               <PhoneIcon  weight="fill" className="w-4 h-4 lg:w-6 lg:h-6"/>
             </div>
-            <div className="text-sm sm:text-xs font-semibold flex gap-2">
+            <div className="text-sm sm:text-xs font-bold flex gap-2">
   <a href="tel:+12314272289">+1-231-427-2289</a>
   <span>/</span>
   <a href="tel:+12314596853">+1-231-459-6853</a>

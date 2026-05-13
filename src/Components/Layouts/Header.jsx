@@ -39,8 +39,8 @@ export default function Header() {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "lg:px-6 py-2.5 text-sm lg:text-base font-[550] text-[#FFAC00]"
-                  : "lg:px-6 py-2.5 text-sm lg:text-base font-[550] text-[#313131] hover:text-[#FFAC00] hover:scale-110 transition-all duration-300"
+                  ? "lg:px-6 py-2.5 text-sm lg:text-base font-bold text-[#FFAC00]"
+                  : "lg:px-6 py-2.5 text-sm lg:text-base font-bold text-[#313131] hover:text-[#FFAC00] hover:scale-120 transition-all duration-300"
               }
             >
               Home
@@ -49,8 +49,8 @@ export default function Header() {
               to="/about-us"
               className={({ isActive }) =>
                 isActive
-                  ? "lg:px-4 py-2.5 text-sm lg:text-base font-[550] text-[#FFAC00]"
-                  : "lg:px-4 py-2.5 text-sm lg:text-base font-[550] text-[#313131] hover:text-[#FFAC00] hover:scale-110 transition-all duration-300"
+                  ? "lg:px-4 py-2.5 text-sm lg:text-base font-bold text-[#FFAC00]"
+                  : "lg:px-4 py-2.5 text-sm lg:text-base font-bold text-[#313131] hover:text-[#FFAC00] hover:scale-120 transition-all duration-300"
               }
             >About Us
             </NavLink>
@@ -58,8 +58,8 @@ export default function Header() {
               to="/our-work"
               className={({ isActive }) =>
                 isActive
-                  ? "lg:px-4 py-2.5 text-sm lg:text-base font-[550] text-[#FFAC00]"
-                  : "lg:px-4 py-2.5 text-sm lg:text-base font-[550] text-[#313131] hover:text-[#FFAC00] hover:scale-110 transition-all duration-300"
+                  ? "lg:px-4 py-2.5 text-sm lg:text-base font-bold text-[#FFAC00]"
+                  : "lg:px-4 py-2.5 text-sm lg:text-base font-bold text-[#313131] hover:text-[#FFAC00] hover:scale-120 transition-all duration-300"
               }
             >Our Works
             </NavLink>
@@ -67,8 +67,8 @@ export default function Header() {
               to="/event"
               className={({ isActive }) =>
                 isActive
-                  ? "lg:px-6 py-2.5 text-sm lg:text-base font-[550] text-[#FFAC00]"
-                  : "lg:px-6 py-2.5 text-sm lg:text-base font-[550] text-[#313131] hover:text-[#FFAC00] hover:scale-110 transition-all duration-300"
+                  ? "lg:px-6 py-2.5 text-sm lg:text-base font-bold text-[#FFAC00]"
+                  : "lg:px-6 py-2.5 text-sm lg:text-base font-bold text-[#313131] hover:text-[#FFAC00] hover:scale-120 transition-all duration-300"
               }
             >Events
             </NavLink>
@@ -76,8 +76,8 @@ export default function Header() {
 
           {/* RIGHT BUTTON */}
           <div className="flex justify-end items-center py-[22px]">
-            <Link to="/contact" className="hidden md:inline-block bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 text-sm md:text-base lg:px-9 lg:py-4 hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 cursor-pointer">
-              <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
+            <Link to="/contact" className="hidden md:inline-block bg-[#FFAC00] -skew-x-[12deg] px-7 py-2  lg:px-10 lg:py-4 hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 cursor-pointer">
+              <span className="block skew-x-[12deg] text-white text-xs font-semibold uppercase">
                 Give Support
               </span>
             </Link>

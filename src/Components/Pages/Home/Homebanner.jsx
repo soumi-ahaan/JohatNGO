@@ -124,7 +124,7 @@ export default function Homebanner() {
                 </h1>
 
                 {/* DESCRIPTION */}
-                <p className="text-xs sm:text-sm md:text-xl leading-snug text-white mb-12 max-w-[650px]">
+                <p className="text-xs sm:text-sm md:text-xl leading-relaxed text-white mb-12 max-w-[650px] font-semibold">
                   {slide.desc.map((line, i) => (
                     <span key={i} className="block">
                       {line}
@@ -134,8 +134,8 @@ export default function Homebanner() {
 
                 {/* BUTTON */}
                 <Link to="/contact">
-                <button className="cursor-pointer bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 text-sm md:text-base md:px-9 md:py-4 hover:scale-110 transition-all duration-300">
-                  <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
+                <button className="cursor-pointer bg-[#FFAC00] -skew-x-[12deg] px-7 py-2  md:px-9 md:py-4 hover:scale-110 transition-all duration-300">
+                  <span className="block skew-x-[12deg] text-white text-xs font-semibold uppercase">
                     Contact Now
                   </span>
                 </button>

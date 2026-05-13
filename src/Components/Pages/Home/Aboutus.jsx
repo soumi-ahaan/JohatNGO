@@ -112,7 +112,7 @@ const Aboutus = () => {
           {/* CTA Button */}
           <div className="pt-4">
             <Link to="/about-us">
-            <button className="cursor-pointer bg-[#FFAC00] text-white font-bold px-8 py-3 lg:py-4 lg:px-12 uppercase tracking-widest text-xs hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 transform -skew-x-12">
+            <button className="cursor-pointer bg-[#FFAC00] text-white font-semibold px-8 py-3 lg:py-4 lg:px-12 uppercase tracking-widest text-xs hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 transform -skew-x-12">
               <span className="inline-block skew-x-12">Learn More</span>
             </button>
             </Link>
