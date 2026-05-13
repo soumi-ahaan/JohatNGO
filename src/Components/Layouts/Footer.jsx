@@ -117,12 +117,12 @@ const Footer = () => {
                 />
 
                 <a
-                  href="https://maps.app.goo.gl/2kmyUZe9Ac4b7R2z8"
+                  href="https://maps.app.goo.gl/YoTJesW9QNg3Xaus6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[16px] font-medium leading-[24px] hover:translate-x-[6px] transition inline-block"
                 >
-                  3975 Purverwoods Rd, Williamsburg, MI 49690, USA
+                  3975 Pulverwoods Rd, Williamsburg, MI 49690, USA
                 </a>
               </li>
 
@@ -151,10 +151,10 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <EnvelopeSimpleOpenIcon size={28} weight="regular" className="text-[#FFAC00] shrink-0" />
                 <a
-                  href="mailto:jat1o1o1953@gmail.com"
+                  href="mailto:Johat1o153@gmail.com"
                   className="text-[16px] font-medium hover:translate-x-[6px] transition inline-block"
                 >
-                  jat1o1o1953@gmail.com
+                  Johat1o153@gmail.com
                 </a>
               </li>
 
@@ -166,11 +166,11 @@ const Footer = () => {
         <div className="mt-[60px] mb-[42px] flex justify-center">
           <div className="w-full max-w-[1170px] bg-[#232323] rounded-[10px] px-[20px] xl:px-[30px] h-auto md:h-[100px] py-4 md:py-0 flex flex-col md:flex-row items-center justify-between">         {/* Left Text */}
             <p className="text-[15px] text-[#898989] text-center md:text-left">
-              © Copyright Year{" "}
+              © Copyright Year 2026{" "}
               <span className="text-[#FFAC00]">
                 Johat Charitable Trust
               </span>
-              . All Rights Reserved by{" "}
+              . Design and Developed by{" "}
               <a
                 href="https://ahaansoftware.com/"
                 target="_blank"
