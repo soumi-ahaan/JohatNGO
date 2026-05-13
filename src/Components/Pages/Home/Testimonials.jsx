@@ -117,20 +117,17 @@ const Testimonials = () => {
   }
 
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section className="relative py-16 overflow-hidden bg-[#f2f2f2]/50">
 
       {/* BACKGROUND */}
-      <div
-        className="absolute inset-0  bg-contain bg-left bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('https://johatngo.ahaanmedia.com/wp-content/uploads/2026/04/Image-3.png')",
-        }}
+      <img
+        className="absolute inset-0  object-contain object-left object-no-repeat max-w-xl"
+        src="https://johatngo.ahaanmedia.com/wp-content/uploads/2026/04/Image-3.png"
       />
 
       {/* <div className="absolute inset-0 bg-[#F2F2F2]/10"></div> */}
 
-      <div className="relative max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 md:gap-20 items-center px-6">
+      <div className="relative max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 md:gap-20 items-center px-4 md:px-8 lg:px-12 xl:px-[72px]">
 
         {/* LEFT */}
         <div>
@@ -153,7 +150,7 @@ const Testimonials = () => {
           <img
             src={halftone}
             alt=""
-            className="absolute inset-0  -z-10  bg-contain bg-center-top bg-no-repeat"
+            className="absolute inset-0   object-contain object-center-top object-no-repeat max-w-2xl"
           />
 
           <div
@@ -171,7 +168,7 @@ const Testimonials = () => {
                 key={i}
                 className="z-0 pt-20 w-full md:w-[85%] lg:w-[90%] xl:w-[85%] md:pr-6 flex-shrink-0"
               >
-                <div className="bg-white rounded-2xl shadow-xl pt-16 px-4 pb-4 md:px-6 md:pb-6 xl:px-10 xl:pb-10 relative">
+                <div className="bg-white rounded-2xl pt-16 px-4 pb-4 md:px-6 md:pb-6 xl:px-10 xl:pb-10 relative">
 
                   <div className="absolute -top-10 left-10">
                     <div className="w-[96px] h-[96px] bg-[#1A685B] rounded-full flex items-center justify-center">
