@@ -125,6 +125,13 @@ const Testimonials = () => {
         src="https://johatngo.ahaanmedia.com/wp-content/uploads/2026/04/Image-3.png"
       />
 
+      {/* RIGHT HALFTONE BG */}
+  <img
+    src={halftone}
+    alt=""
+    className="absolute top-0 right-40 h-full w-auto max-w-3xl object-contain  pointer-events-none"
+  />
+
       {/* <div className="absolute inset-0 bg-[#F2F2F2]/10"></div> */}
 
       <div className="relative max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 md:gap-20 items-center px-4 md:px-8 lg:px-12 xl:px-[72px]">
@@ -147,11 +154,7 @@ const Testimonials = () => {
 
         {/* RIGHT */}
         <div className="relative overflow-hidden">
-          <img
-            src={halftone}
-            alt=""
-            className="absolute inset-0   object-contain object-center-top object-no-repeat max-w-2xl"
-          />
+          
 
           <div
             className="flex "
