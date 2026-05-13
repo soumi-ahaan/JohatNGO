@@ -92,7 +92,7 @@ export default function ContactForm() {
       {/* LEFT: FORM */}
       <div className="relative px-4 md:px-8 lg:px-12 xl:px-[72px] py-20 lg:py-[150px]">
         <div className="w-10 h-[2px] bg-[#FFAC00]" />
-        <p className="text-md md:text-2xl text-[#FFAC00] italic font-caveat pt-1">
+        <p className="text-md md:text-2xl text-[#FFAC00] italic font-caveat pt-1 font-bold">
           Contact Now
         </p>
 

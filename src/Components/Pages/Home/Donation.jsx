@@ -170,11 +170,11 @@ const required = { required: "This field is required" };
               <button
             type="submit"
             disabled={submitting}
-            className={`cursor-pointer bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 md:px-8 md:py-3 transition-all duration-300
+            className={`cursor-pointer bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 md:px-9 md:py-3 transition-all duration-300
     ${submitting ? "opacity-50 cursor-not-allowed" : "hover:bg-[#1F6B5A] hover:scale-110"}
   `}
           >
-            <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
+            <span className="block skew-x-[12deg] text-white text-sm font-bold uppercase">
               {submitting ? "Sending..." : "Sent a message"}
             </span>
           </button>
@@ -198,7 +198,7 @@ const required = { required: "This field is required" };
               <EnvelopeSimpleOpenIcon weight="fill" className=" w-6 h-6 "/>
             </div>
             <div className="text-sm">
-               <a href="mailto:Johat1o153@gmail.com" className="text-xs sm:text-sm xl:text-base">Johat1o153@gmail.com</a><br/>
+               <a href="mailto:Johat1o153@gmail.com" className="text-xs sm:text-sm xl:text-base font-medium">Johat1o153@gmail.com</a><br/>
               {/* <a href="tel:+12314272289" className="text-xs sm:text-sm xl:text-base">+1-231-427-2289</a> */}
             </div>
           </div>
@@ -210,7 +210,7 @@ const required = { required: "This field is required" };
               <a
                   href="https://maps.app.goo.gl/Gx527db4EptJa5FK9"
                   target="_blank"
-                  rel="noopener noreferrer" className="text-xs sm:text-sm xl:text-base">
+                  rel="noopener noreferrer" className="text-xs sm:text-sm xl:text-base font-medium">
                                  3975 Pulverwoods Rd,<br/>
                  Williamsburg, MI 49690, USA
                             </a>

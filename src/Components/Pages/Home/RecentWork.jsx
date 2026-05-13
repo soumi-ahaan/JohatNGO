@@ -91,15 +91,15 @@ const RecentWork = () => {
         {/* Heading */}
         <div className="mb-12">
           <div className="w-10 h-[2px] bg-[#FFAC00]" />
-                  <p className="text-md md:text-2xl text-[#FFAC00] italic font-caveat pt-1">
+                  <p className="text-md md:text-2xl text-[#FFAC00] italic font-caveat pt-1 font-bold">
                     Complete Projects
                   </p>
           <div className="flex justify-between items-center">
             <h2 className=" text-2xl md:text-[32px] lg:text-[50px] leading-[45px] lg:leading-[60px] tracking-[-2px] font-bold text-gray-800 font-display">
               Our Recent Works
             </h2>
-            <Link to="/event" className="bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 text-sm lg:text-base lg:px-12 lg:py-4 hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 cursor-pointer">
-              <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
+            <Link to="/event" className="bg-[#FFAC00] -skew-x-[12deg] px-7 py-2  lg:px-12 lg:py-4 hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300 cursor-pointer">
+              <span className="block skew-x-[12deg] text-white text-xs font-semibold uppercase">
                 View All
               </span>
             </Link>
