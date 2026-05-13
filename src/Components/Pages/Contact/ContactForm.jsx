@@ -234,11 +234,11 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={submitting}
-            className={`cursor-pointer bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 md:px-9 md:py-4 transition-all duration-300
+            className={`cursor-pointer bg-[#FFAC00] -skew-x-[12deg] px-7 py-2 md:px-12 md:py-4 transition-all duration-300
     ${submitting ? "opacity-50 cursor-not-allowed" : "hover:bg-[#1F6B5A] hover:scale-110"}
   `}
           >
-            <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
+            <span className="block skew-x-[12deg] text-white text-xs font-semibold uppercase">
               {submitting ? "Sending..." : "Submit Now"}
             </span>
           </button>

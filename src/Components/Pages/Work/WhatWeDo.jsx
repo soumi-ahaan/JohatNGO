@@ -35,11 +35,11 @@ const WhatWeDo = () => {
 
         {/* Heading */}
         
-        <p className="relative inline-block text-[#FFAC00] text-lg sm:text-xl md:text-[22px] font-caveat font-bold after:content-[''] after:absolute after:left-0 after:top-0 after:w-1/2 after:border-t-2 after:border-yellow-500 pt-2">
+        <p className="relative inline-block text-[#FFAC00] text-lg sm:text-xl md:text-2xl font-caveat font-bold after:content-[''] after:absolute after:left-0 after:top-0 after:w-1/2 after:border-t-2 after:border-yellow-500 pt-2">
           What We Do
         </p>
 
-        <h2 className="text-[22px] md:text-[32px] lg:text-5xl font-bold text-gray-800 mb-10 sm:mb-12 lg:mb-14 font-display leading-tight">
+        <h2 className="text-[22px] md:text-[32px] lg:text-[50px] font-bold text-gray-800 mb-10 sm:mb-12 lg:mb-14 font-display leading-tight">
           Helping Lives, Creating Hope.
         </h2>
 
@@ -93,8 +93,8 @@ const WhatWeDo = () => {
 
                   <button
                     onClick={() => handleOpen(title)}
-                    className="relative inline-block  cursor-pointer w-fit bg-[#FFAC00] -skew-x-[12deg] px-5 py-2 text-sm md:text-base hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300">
-                  <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
+                    className="relative inline-block  cursor-pointer w-fit bg-[#FFAC00] -skew-x-[12deg] px-5 py-2 xl:py-4 xl:px-8 hover:bg-[#1F6B5A] hover:scale-110 transition-all duration-300">
+                  <span className="block skew-x-[12deg] text-white text-xs font-semibold uppercase">
                     {btn?.trim() ? btn : "Donate Now"}
                     </span>
                   </button>

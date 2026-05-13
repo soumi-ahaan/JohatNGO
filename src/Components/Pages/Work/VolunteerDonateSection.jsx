@@ -28,7 +28,7 @@ const VolunteerDonateSection = () => {
 
             {/* Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-              <h2 className="text-3xl xl:text-4xl font-bold font-display mb-3">
+              <h2 className="text-3xl xl:text-[40px] font-bold font-display mb-3">
                 Become a Volunteer
               </h2>
 
@@ -38,8 +38,8 @@ const VolunteerDonateSection = () => {
                 need.
               </p>
 
-              <Link to="/contact" className="relative inline-block  cursor-pointer w-fit bg-[#FFAC00] -skew-x-[12deg] px-8 py-2 lg:px-10 lg:py-2.5 text-sm md:text-base  hover:scale-110 transition-all duration-300">
-                  <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
+              <Link to="/contact" className="relative inline-block  cursor-pointer w-fit bg-[#FFAC00] -skew-x-[12deg] px-8 py-2 lg:px-10 lg:py-4  hover:scale-110 transition-all duration-300">
+                  <span className="block skew-x-[12deg] text-white text-xs font-semibold uppercase">
                    Join Now
                 </span>
               </Link>
@@ -60,7 +60,7 @@ const VolunteerDonateSection = () => {
 
             {/* Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-              <h2 className="text-3xl xl:text-4xl font-bold font-display mb-3">
+              <h2 className="text-3xl xl:text-[40px] font-bold font-display mb-3">
                 Donate Now
               </h2>
 
@@ -72,8 +72,8 @@ const VolunteerDonateSection = () => {
 
               <button
                 onClick={() => setOpen(true)}
-                className="relative inline-block  cursor-pointer w-fit bg-[#FFAC00] -skew-x-[12deg] px-5 py-2 lg:px-8 lg:py-2.5 text-sm md:text-base  hover:scale-110 transition-all duration-300">
-                  <span className="block skew-x-[12deg] text-white text-sm font-semibold uppercase">
+                className="relative inline-block  cursor-pointer w-fit bg-[#FFAC00] -skew-x-[12deg] px-5 py-2 lg:px-10 lg:py-4  hover:scale-110 transition-all duration-300">
+                  <span className="block skew-x-[12deg] text-white text-xs font-semibold uppercase">
                     Donate Now
                 </span>
               </button>

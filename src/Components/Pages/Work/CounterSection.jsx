@@ -28,7 +28,7 @@ const Counter = ({ end, suffix = "" }) => {
   }, [end]);
 
   return (
-    <h3 className="text-sm md:text-2xl font-bold mt-2 font-display">
+    <h3 className="text-sm md:text-4xl font-bold mt-2 font-display">
       {count}
       {suffix}
     </h3>
@@ -45,25 +45,25 @@ const CounterSection = () => {
           <div className="flex flex-col items-center">
             <Users className="w-6 h-6 md:w-10 md:h-10" />
             <Counter end={500} suffix="+" />
-            <p className="text-sm">Families Supported</p>
+            <p className="text-base">Families Supported</p>
           </div>
 
           <div className="flex flex-col items-center">
             <HandHeart className="w-6 h-6 md:w-10 md:h-10" />
             <Counter end={50} suffix="+" />
-            <p className="text-sm">Volunteers</p>
+            <p className="text-base">Volunteers</p>
           </div>
 
           <div className="flex flex-col items-center">
             <Heartbeat className="w-6 h-6 md:w-10 md:h-10" />
             <Counter end={10000} suffix="+" />
-            <p className="text-sm">Lives Impacted</p>
+            <p className="text-base">Lives Impacted</p>
           </div>
 
           <div className="flex flex-col items-center">
             <Gift className="w-6 h-6 md:w-10 md:h-10" />
             <Counter end={100} suffix="+" />
-            <p className="text-sm">Donation Campaigns</p>
+            <p className="text-base">Donation Campaigns</p>
           </div>
 
         </div>

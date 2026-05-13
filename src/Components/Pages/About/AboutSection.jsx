@@ -60,14 +60,14 @@ const AboutSection = () => {
                             </svg>
 
                             <div>
-                                <p className="font-display text-[20px] md:text-[20px] font-medium text-[#313131]">
+                                <p className="font-display text-xl font-medium text-[#313131]">
                                     We are a charity organization dedicated to supporting
                                     underprivileged communities through food, education,
                                     healthcare, and community support, creating hope and
                                     positive change.
                                 </p>
 
-                                <p className="mt-4 text-[14px] text-[#6F6F6F]">
+                                <p className="mt-4 text-sm text-[#6F6F6F]">
                                     With the help of our volunteers, donors, and partners, we
                                     strive to build stronger communities filled with compassion,
                                     dignity, and equal opportunities for everyone.
