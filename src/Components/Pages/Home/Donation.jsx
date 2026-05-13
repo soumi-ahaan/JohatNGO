@@ -198,7 +198,7 @@ const required = { required: "This field is required" };
               <EnvelopeSimpleOpenIcon weight="fill" className=" w-6 h-6 "/>
             </div>
             <div className="text-sm">
-               <a href="mailto:jat1o1o1953@gmail.com" className="text-xs sm:text-sm xl:text-base">jat1o1o1953@gmail.com</a><br/>
+               <a href="mailto:Johat1o153@gmail.com" className="text-xs sm:text-sm xl:text-base">Johat1o153@gmail.com</a><br/>
               {/* <a href="tel:+12314272289" className="text-xs sm:text-sm xl:text-base">+1-231-427-2289</a> */}
             </div>
           </div>
@@ -207,9 +207,12 @@ const required = { required: "This field is required" };
               <MapTrifoldIcon weight="fill" className="w-6 h-6"/>
             </div>
             <div className="text-sm leading-tight">
-              <a href="https://maps.app.goo.gl/PeXnxYz9fCtw14re8" className="text-xs sm:text-sm xl:text-base">
-                                3795 Plymouth Rd<br />
-                                Williamsburg, MI 49690, USA
+              <a
+                  href="https://maps.app.goo.gl/Gx527db4EptJa5FK9"
+                  target="_blank"
+                  rel="noopener noreferrer" className="text-xs sm:text-sm xl:text-base">
+                                 3975 Pulverwoods Rd,<br/>
+                 Williamsburg, MI 49690, USA
                             </a>
             </div>
           </div>

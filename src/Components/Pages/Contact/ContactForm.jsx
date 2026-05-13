@@ -249,15 +249,12 @@ export default function ContactForm() {
       <div className="relative w-full h-[600px] lg:h-auto">
 
         {/* Google Map */}
-        <iframe
-          title="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.892409020854!2d-85.37938472406391!3d44.742211781320904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881fc4c0bf24a8e9%3A0x59afda054e8f9833!2s3975%20Pulverwoods%20Rd%2C%20Williamsburg%2C%20MI%2049690%2C%20USA!5e0!3m2!1sen!2sin!4v1777630601128!5m2!1sen!2sin"
-          className="w-full h-full border-0"
-          loading="lazy"
-        ></iframe>
+        <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.8925943723907!2d-85.37680979999999!3d44.742208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881fc4c0bf24a8e9%3A0x59afda054e8f9833!2s3975%20Pulverwoods%20Rd%2C%20Williamsburg%2C%20MI%2049690%2C%20USA!5e0!3m2!1sen!2sin!4v1778653625302!5m2!1sen!2sin" className="w-full h-full border-0"
+          loading="lazy"></iframe>
+        
 
         {/* YELLOW CARD */}
-        <div className="absolute left-0 bottom-0 bg-[#FFAC00] text-white p-4 w-[65%] space-y-2 sm:space-y-4 xl:pl-9 xl:pr-14 xl:py-[44px] md:w-[50%] xl:space-y-6 shadow-lg">
+        <div className="absolute left-0 bottom-0 bg-[#FFAC00] text-white p-4 w-[65%] space-y-2 sm:space-y-4 xl:pl-7 xl:pr-12 xl:py-[30px] md:w-[50%] shadow-lg">
 
           {/* Phone */}
           <div className="flex gap-6 border-b border-white/40 pb-1 xl:pb-6">
@@ -281,9 +278,8 @@ export default function ContactForm() {
 
             <div>
               <p className="font-medium text-sm sm:text-xl xl:text-[30px] leading-relaxed font-display">Email</p>
-              <a href="mailto:jat1o1o1953@gmail.com" className="text-xs sm:text-sm xl:text-base">jat1o1o1953@gmail.com</a>
-              {/* <a href="mailto:johat1o11953@outlook.com" className="text-xs sm:text-sm xl:text-base">johat1o11953@outlook.com</a><br />
-              <a href="mailto:james@johatenterises.com" className="text-xs sm:text-sm xl:text-base">james@johatenterises.com</a> */}
+              <a href="mailto:Johat1o153@gmail.com" className="text-xs sm:text-sm xl:text-base">Johat1o153@gmail.com</a>
+              
             </div>
           </div>
 
@@ -295,9 +291,13 @@ export default function ContactForm() {
 
             <div>
               <p className="font-medium text-sm sm:text-xl xl:text-[30px] leading-relaxed font-display">Location</p>
-              <a href="https://maps.app.goo.gl/PeXnxYz9fCtw14re8" className="text-xs sm:text-sm xl:text-base">
-                3795 Plymouth Rd<br />
-                Williamsburg, MI 49690, USA
+               <a
+                  href="https://maps.app.goo.gl/Gx527db4EptJa5FK9"
+                  target="_blank"
+                  rel="noopener noreferrer" className="text-xs sm:text-sm xl:text-base">
+                                 3975 Pulverwoods Rd,<br/>
+                 Williamsburg, MI 49690, USA
+                          
               </a>
             </div>
           </div>

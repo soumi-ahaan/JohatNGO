@@ -31,8 +31,8 @@ export default function TopHeader() {
             <div className="bg-[#1F6B5A] p-1 md:p-2 rounded-full">
               <EnvelopeSimpleIcon  weight="fill" className="w-4 h-4 lg:w-6 lg:h-6"/>
             </div>
-            <a href="mailto:jat1o1o1953@gmail.com" className="cursor-pointer text-sm sm:text-xs font-semibold">
-               jat1o1o1953@gmail.com
+            <a href="mailto:Johat1o153@gmail.com" className="cursor-pointer text-sm sm:text-xs font-semibold">
+               Johat1o153@gmail.com
             </a>
           </div>
 
