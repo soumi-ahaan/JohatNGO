@@ -34,45 +34,72 @@ export default function Header() {
           </div>
 
           {/* CENTER NAV */}
-          <nav className="hidden md:flex justify-center items-center gap-3 md:gap-6 xl:gap-[35px] text-xs lg:text-base whitespace-nowrap">
+          <nav className="hidden md:flex justify-center items-center gap-3 xl:gap-[35px] text-xs lg:text-base whitespace-nowrap">
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive
-                  ? "lg:px-6 py-2.5 text-sm lg:text-base font-bold text-[#FFAC00]"
-                  : "lg:px-6 py-2.5 text-sm lg:text-base font-bold text-[#313131] hover:text-[#FFAC00] hover:scale-120 transition-all duration-300"
-              }
+    `relative z-20 px-2 lg:px-4 py-2.5 text-xs lg:text-sm xl:text-base font-bold transition-all duration-300
+    ${
+      isActive
+        ? "text-[#FFAC00]"
+        : "text-[#313131] hover:text-[#FFAC00] hover:scale-110"
+    }`
+  }
             >
               Home
             </NavLink>
+            
             <NavLink
               to="/about-us"
               className={({ isActive }) =>
-                isActive
-                  ? "lg:px-4 py-2.5 text-sm lg:text-base font-bold text-[#FFAC00]"
-                  : "lg:px-4 py-2.5 text-sm lg:text-base font-bold text-[#313131] hover:text-[#FFAC00] hover:scale-120 transition-all duration-300"
-              }
+    `relative z-20 px-2 lg:px-4 py-2.5 text-xs lg:text-sm xl:text-base font-bold transition-all duration-300
+    ${
+      isActive
+        ? "text-[#FFAC00]"
+        : "text-[#313131] hover:text-[#FFAC00] hover:scale-110"
+    }`
+  }
             >About Us
             </NavLink>
             <NavLink
               to="/our-work"
               className={({ isActive }) =>
-                isActive
-                  ? "lg:px-4 py-2.5 text-sm lg:text-base font-bold text-[#FFAC00]"
-                  : "lg:px-4 py-2.5 text-sm lg:text-base font-bold text-[#313131] hover:text-[#FFAC00] hover:scale-120 transition-all duration-300"
-              }
+    `relative z-20 px-2 lg:px-4 py-2.5 text-xs lg:text-sm xl:text-base font-bold transition-all duration-300
+    ${
+      isActive
+        ? "text-[#FFAC00]"
+        : "text-[#313131] hover:text-[#FFAC00] hover:scale-110"
+    }`
+  }
             >Our Works
             </NavLink>
             <NavLink
               to="/event"
               className={({ isActive }) =>
-                isActive
-                  ? "lg:px-6 py-2.5 text-sm lg:text-base font-bold text-[#FFAC00]"
-                  : "lg:px-6 py-2.5 text-sm lg:text-base font-bold text-[#313131] hover:text-[#FFAC00] hover:scale-120 transition-all duration-300"
-              }
+    `relative z-20 px-2 lg:px-4 py-2.5 text-xs lg:text-sm xl:text-base font-bold transition-all duration-300
+    ${
+      isActive
+        ? "text-[#FFAC00]"
+        : "text-[#313131] hover:text-[#FFAC00] hover:scale-110"
+    }`
+  }
             >Events
             </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+    `relative z-20 px-2 lg:px-4 py-2.5 text-xs lg:text-sm xl:text-base font-bold transition-all duration-300
+    ${
+      isActive
+        ? "text-[#FFAC00]"
+        : "text-[#313131] hover:text-[#FFAC00] hover:scale-110"
+    }`
+  }
+            >
+              Contact
+            </NavLink>
           </nav>
+
 
           {/* RIGHT BUTTON */}
           <div className="flex justify-end items-center py-[22px]">
@@ -144,6 +171,17 @@ export default function Header() {
                 : "px-6 py-4 text-base font-[550] bg-transparent text-[#313131]"
             }
           >Events
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+             onClick={() => setOpen(false)}               
+            className={({ isActive }) =>
+              isActive
+                ? "px-6 py-4 text-base font-[550] bg-[#FFAC00] text-white"
+                : "px-6 py-4 text-base font-[550] bg-transparent text-[#313131]"
+            }
+          >Contact
           </NavLink>
 
 
