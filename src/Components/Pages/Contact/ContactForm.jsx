@@ -87,7 +87,7 @@ export default function ContactForm() {
   const required = { required: "This field is required" };
   return (
     <section className="bg-[#F7F7F7] overflow-hidden">
-    <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.05fr]">
+    <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_1.05fr]">
 
       {/* LEFT: FORM */}
       <div className="relative px-4 md:px-8 lg:px-12 xl:px-[72px] py-20 lg:py-[150px]">
@@ -111,16 +111,16 @@ export default function ContactForm() {
                 message: "Only letters are allowed",
               },
             })}
-            className="w-full border border-[#D7D7D7] px-5 py-4 outline-none"
+            className="w-full border border-[#D7D7D7] p-3 text-sm lg:px-5 lg:py-4 outline-none"
           />
           {errors.name && (
-            <p className="text-red-500">{errors.name.message}</p>
+            <p className="text-red-500 text-xs ml-5">{errors.name.message}</p>
           )}
 
           <input
             type="tel"
             placeholder="Phone*"
-            className="w-full border border-[#D7D7D7] px-5 py-4 outline-none"
+            className="w-full border border-[#D7D7D7] p-3 text-sm lg:px-5 lg:py-4 outline-none"
             {...register("phone", {
               required: "Phone number is required",
               validate: {
@@ -179,13 +179,13 @@ export default function ContactForm() {
             }}
           />
           {errors.phone && (
-            <p className="text-red-500">{errors.phone.message}</p>
+            <p className="text-red-500 text-xs ml-5">{errors.phone.message}</p>
           )}
 
           <input
             type="email"
             placeholder="Email*"
-            className="w-full border border-[#D7D7D7] px-5 py-4 outline-none"
+            className="w-full border border-[#D7D7D7] p-3 text-sm lg:px-5 lg:py-4 outline-none"
             {...register("email", {
               required: "Email is required",
               pattern: {
@@ -196,12 +196,12 @@ export default function ContactForm() {
             })}
           />
           {errors.email && (
-            <p className="text-red-500">{errors.email.message}</p>
+            <p className="text-red-500 text-xs ml-5">{errors.email.message}</p>
           )}
           <textarea
             rows="5"
             placeholder="Tell us something...."
-            className="w-full border border-[#D7D7D7] px-5 py-4 outline-none"
+            className="w-full border border-[#D7D7D7] p-3 text-sm lg:px-5 lg:py-4 outline-none"
             {...register("message")}
           ></textarea>
 
@@ -215,7 +215,7 @@ export default function ContactForm() {
               <input
                 type="text"
                 placeholder="Your Answer"
-                className={`className="w-full border border-[#D7D7D7] px-5 py-4 outline-none" ${errors.captcha ? "is-invalid" : ""
+                className={`className="w-full border border-[#D7D7D7] p-3 text-sm lg:px-5 lg:py-4 outline-none" ${errors.captcha ? "is-invalid" : ""
                   }`}
                 {...register("captcha", {
                   required: "Captcha is required",
@@ -226,7 +226,7 @@ export default function ContactForm() {
               />
 
               {errors.captcha && (
-                <p className="text-red-500 text-base">{errors.captcha.message}</p>
+                <p className="text-red-500 text-xs ml-5">{errors.captcha.message}</p>
               )}
             </div>
           )}
@@ -254,17 +254,17 @@ export default function ContactForm() {
         
 
         {/* YELLOW CARD */}
-        <div className="absolute left-0 bottom-0 bg-[#FFAC00] text-white p-4 w-[65%] space-y-2 sm:space-y-4 xl:pl-7 xl:pr-12 xl:py-[30px] md:w-[50%] shadow-lg">
+        <div className="absolute left-0 bottom-0 bg-[#FFAC00] text-white p-4 w-[65%] space-y-2 lg:space-y-4 xl:pl-7 xl:pr-12 xl:py-[30px] lg:w-[50%] shadow-lg">
 
           {/* Phone */}
           <div className="flex gap-6 border-b border-white/40 pb-1 xl:pb-6">
-            <div className="w-10 h-10 sm:w-[48px] sm:h-[48px] rounded-full bg-white/20 flex items-center justify-center">
+            <div className="w-10 h-10 lg:w-[48px] lg:h-[48px] rounded-full bg-white/20 flex items-center justify-center">
               <Phone className="text-white w-8 h-8 xl:w-14 xl:h-14  ml-5 mt-7" />
             </div>
             <div>
-              <p className="font-medium text-sm sm:text-xl xl:text-[30px] leading-relaxed font-display">Phone</p>
-              <a href="tel:+12314272289" className="text-xs sm:text-sm xl:text-base">+1-231-427-2289</a><br />
-              <a href="tel:+12314596853" className="text-xs sm:text-sm xl:text-base">+1-231-459-6853</a>
+              <p className="font-medium text-sm lg:text-xl xl:text-[30px] leading-relaxed font-display">Phone</p>
+              <a href="tel:+12314272289" className="text-xs lg:text-sm xl:text-base">+1-231-427-2289</a><br />
+              <a href="tel:+12314596853" className="text-xs lg:text-sm xl:text-base">+1-231-459-6853</a>
             </div>
           </div>
 
@@ -272,29 +272,29 @@ export default function ContactForm() {
 
           {/* Email */}
           <div className="flex gap-6 border-b border-white/40 pb-1 xl:pb-6">
-            <div className="w-10 h-10 sm:w-[48px] sm:h-[48px] rounded-full bg-white/20 flex items-center justify-center">
+            <div className="w-10 h-10 lg:w-[48px] lg:h-[48px] rounded-full bg-white/20 flex items-center justify-center">
               <EnvelopeSimple weight="fill" className="text-white w-8 h-8 xl:w-14 xl:h-14  ml-5 mt-7" />
             </div>
 
             <div>
-              <p className="font-medium text-sm sm:text-xl xl:text-[30px] leading-relaxed font-display">Email</p>
-              <a href="mailto:Johat1o153@gmail.com" className="text-xs sm:text-sm xl:text-base">Johat1o153@gmail.com</a>
+              <p className="font-medium text-sm lg:text-xl xl:text-[30px] leading-relaxed font-display">Email</p>
+              <a href="mailto:Johat1o153@gmail.com" className="text-xs lg:text-sm xl:text-base">Johat1o153@gmail.com</a>
               
             </div>
           </div>
 
           {/* Location */}
           <div className="flex gap-6">
-            <div className="w-10 h-10 sm:w-[48px] sm:h-[48px] rounded-full bg-white/20 flex items-center justify-center">
+            <div className="w-10 h-10 lg:w-[48px] lg:h-[48px] rounded-full bg-white/20 flex items-center justify-center">
               <MapPin weight="fill" className="text-white w-8 h-8 xl:w-14 xl:h-14  ml-5 mt-7" />
             </div>
 
             <div>
-              <p className="font-medium text-sm sm:text-xl xl:text-[30px] leading-relaxed font-display">Location</p>
+              <p className="font-medium text-sm lg:text-xl xl:text-[30px] leading-relaxed font-display">Location</p>
                <a
                   href="https://maps.app.goo.gl/Gx527db4EptJa5FK9"
                   target="_blank"
-                  rel="noopener noreferrer" className="text-xs sm:text-sm xl:text-base">
+                  rel="noopener noreferrer" className="text-xs lg:text-sm xl:text-base">
                                  3975 Pulverwoods Rd,<br/>
                  Williamsburg, MI 49690, USA
                           
