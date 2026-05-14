@@ -72,6 +72,15 @@ export default function Header() {
               }
             >Events
             </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? "lg:px-6 py-2.5 text-sm lg:text-base font-bold text-[#FFAC00]"
+                  : "lg:px-6 py-2.5 text-sm lg:text-base font-bold text-[#313131] hover:text-[#FFAC00] hover:scale-120 transition-all duration-300"
+              }
+            >Contact
+            </NavLink>
           </nav>
 
           {/* RIGHT BUTTON */}
@@ -144,6 +153,16 @@ export default function Header() {
                 : "px-6 py-4 text-base font-[550] bg-transparent text-[#313131]"
             }
           >Events
+          </NavLink>
+          <NavLink
+            to="/contact"
+             onClick={() => setOpen(false)}               
+            className={({ isActive }) =>
+              isActive
+                ? "px-6 py-4 text-base font-[550] bg-[#FFAC00] text-white"
+                : "px-6 py-4 text-base font-[550] bg-transparent text-[#313131]"
+            }
+          >Contact
           </NavLink>
 
 
