@@ -153,8 +153,8 @@ export default function Homebanner() {
           <button
             key={i}
             onClick={() => setCurrent(i + 1)}
-            className={`w-3 h-3 rounded-full ${
-              current === i + 1 ? "bg-white" : "bg-white/50"
+            className={`w-3 h-3 rounded-full border border-white ${
+              current === i + 1 ? "bg-white" : "bg-transparent"
             }`}
           />
         ))}
